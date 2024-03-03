@@ -1,11 +1,11 @@
 {
-    "recommendations": [
-        "github.vscode-github-actions",
-        "ms-vscode.makefile-tools",
-        "streetsidesoftware.code-spell-checker",
-        "eamodio.gitlens",
-        "dbaeumer.vscode-eslint",
-        "christian-kohler.npm-intellisense",
-        "davidanson.vscode-markdownlint"
-    ]
+  "recommendations": [
+    "github.vscode-github-actions",
+    "ms-vscode.makefile-tools",
+    "streetsidesoftware.code-spell-checker",
+    "eamodio.gitlens",
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.npm-intellisense",
+    "davidanson.vscode-markdownlint"
+  ]
 }

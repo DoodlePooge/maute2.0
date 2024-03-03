@@ -1,10 +1,10 @@
-name: Code clarity check
+name: Pre-merge checks
 
 on: push
 
 jobs:
     check:
-        name: Check for code formating and linting issues
+        name: Code clarity check
         runs-on: ubuntu-latest
         
         steps:

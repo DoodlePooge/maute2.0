@@ -1,0 +1,12 @@
+{
+  "markdownlint.ignore": [".github/*", ".cPanel/*"],
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[prettier]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "cSpell.words": ["callout", "vercel"]
+}
