@@ -6,6 +6,7 @@
     "eamodio.gitlens",
     "dbaeumer.vscode-eslint",
     "christian-kohler.npm-intellisense",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode"
   ]
 }
