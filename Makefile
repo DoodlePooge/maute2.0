@@ -4,6 +4,12 @@ clean:
 install:
 	npm install
 
+lint:
+	npm run lint
+
+spellcheck:
+	cspell .
+
 build:
 	npm run build
 

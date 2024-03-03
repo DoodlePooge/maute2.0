@@ -1,0 +1,26 @@
+name: Pre-merge checks
+
+on: pull_request
+
+jobs:
+  check:
+    name: Code clarity check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 🔨 Install Dependencies
+        run: |
+          npm install
+          npm install -g cspell@latest
+
+      - name: Run Eslint
+        run: npm run lint
+
+      - name: Run cspell
+        run: cspell .
+
+      - name: Run prettier
+        run: npx prettier . --check

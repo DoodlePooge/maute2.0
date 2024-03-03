@@ -1,0 +1,10 @@
+{
+  "dictionaries": ["cspell-ignore"],
+  "dictionaryDefinitions": [
+    {
+      "name": "cspell-ignore",
+      "path": "./cspell-ignore.txt",
+      "addWords": true
+    }
+  ]
+}
