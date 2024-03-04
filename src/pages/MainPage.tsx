@@ -1,8 +1,11 @@
-import { Box, Button, Checkbox } from "@mui/material";
-import { FC } from "react";
+import { Box, Button, Checkbox, Typography } from "@mui/material"
+import { FC } from "react"
 export const MainPage: FC = () => {
   return (
     <Box>
+      <Typography variant="h1">
+        Site is currently being worked on, come back later.
+      </Typography>
       <Checkbox />
       <Button href="./paige" variant="contained">
         Paige
@@ -11,5 +14,5 @@ export const MainPage: FC = () => {
         Bryan
       </Button>
     </Box>
-  );
-};
+  )
+}
