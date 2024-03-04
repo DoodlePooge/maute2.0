@@ -6,5 +6,6 @@
       "path": "./cspell-ignore.txt",
       "addWords": true
     }
-  ]
+  ],
+  "ignorePaths": ["node_modules/**", "dist/**", "public/**", "src/assets/**"]
 }
