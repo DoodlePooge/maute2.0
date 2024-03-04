@@ -1,16 +1,16 @@
-import { styled } from "@mui/material/styles"
-import { Outlet } from "react-router-dom"
+import { styled } from "@mui/material/styles";
+import { Outlet } from "react-router-dom";
 
-const MainLayoutRoot = styled('div')(({ theme }) => ({
+const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
-  height: '100%',
+  height: "100%",
   paddingTop: 64,
-}))
+}));
 
 export const MainLayout = () => {
-  return(
+  return (
     <MainLayoutRoot>
       <Outlet />
     </MainLayoutRoot>
-  )
-}
+  );
+};

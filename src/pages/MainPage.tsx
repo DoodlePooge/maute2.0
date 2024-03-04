@@ -1,9 +1,15 @@
-import { Box, Button, Checkbox } from '@mui/material'
-import { FC } from 'react'
+import { Box, Button, Checkbox } from "@mui/material";
+import { FC } from "react";
 export const MainPage: FC = () => {
-  return(
+  return (
     <Box>
       <Checkbox />
-      <Button href='./paige' variant='contained'>Paige</Button><Button href='./bryan' variant='contained'>Bryan</Button></Box>
-  )
-}
+      <Button href="./paige" variant="contained">
+        Paige
+      </Button>
+      <Button href="./bryan" variant="contained">
+        Bryan
+      </Button>
+    </Box>
+  );
+};

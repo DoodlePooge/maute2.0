@@ -10,6 +10,9 @@ lint:
 spellcheck:
 	cspell .
 
+prettier:
+	npx prettier . --write
+
 build:
 	npm run build
 
