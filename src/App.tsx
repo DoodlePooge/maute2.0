@@ -1,21 +1,21 @@
-import { ThemeProvider } from "@emotion/react";
-import { bryTheme, mainTheme } from "./themes";
-import { CssBaseline } from "@mui/material";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { MainLayout } from "./components/layouts/MainLayout";
-import { MainPage } from "./pages/MainPage";
-import { Paige } from "./pages/Paige";
-import { Bryan } from "./pages/Bryan";
-import { NoPage } from "./pages/NoPage";
+import { ThemeProvider } from "@emotion/react"
+import { bryTheme, mainTheme } from "./themes"
+import { CssBaseline } from "@mui/material"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { MainLayout } from "./components/layouts/MainLayout"
+import { MainPage } from "./pages/MainPage"
+import { Paige } from "./pages/Paige"
+import { Bryan } from "./pages/Bryan"
+import { NoPage } from "./pages/NoPage"
 
 function App() {
-  const pathname = window.location.pathname;
+  const pathname = window.location.pathname
   const pathTheme = pathname.includes("paige")
     ? "paige"
     : pathname.includes("bryan")
       ? "bryan"
-      : "main";
-  const theme = pathTheme === "bryan" ? bryTheme : mainTheme;
+      : "main"
+  const theme = pathTheme === "bryan" ? bryTheme : mainTheme
 
   return (
     <ThemeProvider theme={theme}>
@@ -31,7 +31,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,5 +1,5 @@
-import { Box, Button, Checkbox, Typography } from "@mui/material";
-import { FC } from "react";
+import { Box, Button, Checkbox, Typography } from "@mui/material"
+import { FC } from "react"
 export const MainPage: FC = () => {
   return (
     <Box>
@@ -14,5 +14,5 @@ export const MainPage: FC = () => {
         Bryan
       </Button>
     </Box>
-  );
-};
+  )
+}

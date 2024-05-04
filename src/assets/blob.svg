@@ -1,22 +1,13 @@
-// Copied the information of the svg from ./assets/blob.svg to take advantage of the fill property
-export const Blob = (props: { fill: string | undefined }) => {
-  return (
-    <>
-      <svg
-        version="1.0"
-        xmlns="http://www.w3.org/2000/svg"
-        width="1920.000000pt"
-        height="1080.000000pt"
-        viewBox="0 0 1920.000000 1080.000000"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <g
-          transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-          fill={props.fill}
-          stroke="none"
-        >
-          <path
-            d="M15620 10659 c-336 -16 -727 -115 -1130 -286 -259 -109 -723 -347
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1920.000000pt" height="1080.000000pt" viewBox="0 0 1920.000000 1080.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M15620 10659 c-336 -16 -727 -115 -1130 -286 -259 -109 -723 -347
 -1135 -581 -517 -293 -963 -518 -1255 -632 -218 -86 -511 -168 -725 -204 -172
 -29 -343 -39 -570 -32 -480 13 -932 103 -1795 356 -876 257 -1266 340 -1745
 371 -803 52 -1531 -174 -2107 -653 -128 -107 -325 -303 -453 -453 -138 -161
@@ -34,10 +25,6 @@ export const Blob = (props: { fill: string | undefined }) => {
 948 152 1315 240 599 142 958 278 1297 491 309 194 535 434 678 719 87 173
 148 394 161 583 4 54 11 97 15 97 5 0 9 29 9 65 0 36 -4 65 -9 65 -4 0 -9 37
 -10 83 -5 204 -75 585 -162 885 -61 211 -180 481 -304 691 -199 337 -689 798
--1315 1238 -301 212 -560 343 -860 439 -297 94 -581 129 -910 113z"
-          />
-        </g>
-      </svg>
-    </>
-  )
-}
+-1315 1238 -301 212 -560 343 -860 439 -297 94 -581 129 -910 113z"/>
+</g>
+</svg>
