@@ -1,12 +1,14 @@
-import { Checkbox } from "@mui/material";
-import { FC } from "react";
-// import { ThemeProvider } from '@emotion/react'
-// import { bryTheme } from '../themes'
-
+import { Card, CardContent, Typography } from "@mui/material"
+import { FC } from "react"
 export const Bryan: FC = () => {
   return (
-    // <ThemeProvider theme={bryTheme}>
-    <Checkbox defaultChecked />
-    // </ThemeProvider>
-  );
-};
+    <>
+      <Card>
+        <CardContent>
+          <Typography variant="h1">HEADER</Typography>
+          HI
+        </CardContent>
+      </Card>
+    </>
+  )
+}
