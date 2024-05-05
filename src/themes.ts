@@ -12,8 +12,8 @@ export const mainTheme = createTheme({
       main: "#FFBDAB",
     },
     background: {
-      default: "#EEE8FF",
-      paper: "#E2D6FF",
+      default: "#E2D6FF",
+      paper: "#EEE8FF",
     },
     success: {
       main: "#BBF9BD",
@@ -40,8 +40,8 @@ export const bryTheme = createTheme({
       main: "#A5D5FF",
     },
     background: {
-      default: "#FFC9C9",
-      paper: "#FF9797",
+      default: "#FF9797",
+      paper: "#FFC9C9",
     },
     success: {
       main: "#94FF97",
