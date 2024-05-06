@@ -34,7 +34,7 @@ export const mainTheme = createTheme({
 export const bryTheme = createTheme({
   palette: {
     primary: {
-      main: "#FFFAFA",
+      main: "#273469",
     },
     secondary: {
       main: "#A5D5FF",

@@ -1,18 +1,41 @@
-import { Box, Button, Checkbox, Typography } from "@mui/material"
+import { Avatar, Box, Link, Stack, Typography, useTheme } from "@mui/material"
 import { FC } from "react"
+import paige from "../assets/paige.webp"
+import bryan from "../assets/bryan.jpg"
+
 export const MainPage: FC = () => {
+  const theme = useTheme()
   return (
     <Box>
-      <Typography variant="h1">
+      <Stack direction="row" sx={{ justifyContent: "center" }}>
+        <Link href="/paige">
+          <Avatar
+            src={paige}
+            sx={{
+              border: 10,
+              borderColor: theme.palette.background.paper,
+              m: 2,
+              width: 300,
+              height: 300,
+            }}
+          />
+        </Link>
+        <Link href="/bryan">
+          <Avatar
+            src={bryan}
+            sx={{
+              border: 10,
+              borderColor: theme.palette.background.paper,
+              m: 2,
+              width: 300,
+              height: 300,
+            }}
+          />
+        </Link>
+      </Stack>
+      <Typography variant="h1" sx={{ textAlign: "center" }}>
         Site is currently being worked on, come back later.
       </Typography>
-      <Checkbox />
-      <Button href="./paige" variant="contained">
-        Paige
-      </Button>
-      <Button href="./bryan" variant="contained">
-        Bryan
-      </Button>
     </Box>
   )
 }

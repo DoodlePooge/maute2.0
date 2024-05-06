@@ -19,17 +19,6 @@
       ]
     },
     {
-      "header": "Primary Example1",
-      "contents": [
-        {
-          "subheader": "Subheader1",
-          "bold": "BoldText",
-          "tiny": "Tiny Text",
-          "bullets": ["This is one thing", "this is another thing"]
-        }
-      ]
-    },
-    {
       "header": "Primary Example2",
       "contents": [{ "subheader": "Subheader2", "bullets": ["Hai"] }]
     }
