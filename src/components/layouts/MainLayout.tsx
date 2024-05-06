@@ -13,24 +13,23 @@ const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   height: "100vh",
   width: "100vw",
-  position: "fixed",
 }))
 
 export const MainLayout = () => {
   const theme = useTheme()
   return (
     <MainLayoutRoot>
-      <Link href="/" underline="none">
-        <Typography
-          variant="h2"
-          fontWeight={900}
-          color={theme.palette.text.secondary}
-          sx={{ marginLeft: 3, marginTop: 2 }}
-        >
-          MAUTE.US
-        </Typography>
-      </Link>
-      <Container sx={{ display: "flex", justifyContent: "center" }}>
+      <Container sx={{ position: "fixed" }}>
+        <Link href="/" underline="none">
+          <Typography
+            variant="h2"
+            fontWeight={900}
+            color={theme.palette.text.secondary}
+            sx={{ marginLeft: 3, marginTop: 2, position: "absolute" }}
+          >
+            MAUTE.US
+          </Typography>
+        </Link>
         <Box
           sx={{
             position: "absolute",
@@ -43,15 +42,6 @@ export const MainLayout = () => {
         </Box>
         <Box
           sx={{
-            zIndex: 2,
-            maxWidth: "90vw",
-            marginTop: 10,
-          }}
-        >
-          <Outlet />
-        </Box>
-        <Box
-          sx={{
             zIndex: -1,
             position: "absolute",
             top: "60vh",
@@ -59,6 +49,19 @@ export const MainLayout = () => {
           }}
         >
           <Blob fill={theme.palette.background.default} />
+        </Box>
+      </Container>
+      <Container sx={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          sx={{
+            zIndex: 2,
+            width: "80vw",
+            // maxHeight: "90vh",
+            marginTop: 10,
+            // overflow: "scroll",
+          }}
+        >
+          <Outlet />
         </Box>
       </Container>
     </MainLayoutRoot>

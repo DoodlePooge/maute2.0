@@ -1,0 +1,36 @@
+{
+  "contact": {
+    "email": "test@gmail.com",
+    "phone": "(555) 555-5555",
+    "location": "Washington DC",
+    "github": { "label": "Example", "link": "https://maute.us" },
+    "links": [{ "label": "Maute.US", "link": "https://maute.us" }]
+  },
+  "primary": [
+    {
+      "header": "Primary Example1",
+      "contents": [
+        {
+          "subheader": "",
+          "bold": "",
+          "tiny": "",
+          "bullets": [""]
+        }
+      ]
+    },
+    { "header": "Primary Example2", "contents": [{ "bullets": [""] }] }
+  ],
+  "secondary": [
+    {
+      "header": "Secondary Example",
+      "contents": [
+        {
+          "subheader": "Subheader",
+          "bold": "Bold Text",
+          "tiny": "Tiny Text",
+          "items": ["item1", "item2"]
+        }
+      ]
+    }
+  ]
+}
