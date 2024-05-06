@@ -6,7 +6,7 @@ import { createTheme } from "@mui/material/styles"
 export const mainTheme = createTheme({
   palette: {
     primary: {
-      main: "#FAFAFF",
+      main: "#273469",
     },
     secondary: {
       main: "#FFBDAB",
@@ -16,13 +16,13 @@ export const mainTheme = createTheme({
       paper: "#EEE8FF",
     },
     success: {
-      main: "#BBF9BD",
+      main: "#69F26D",
     },
     warning: {
-      main: "#FFECA8",
+      main: "#FFE070",
     },
     error: {
-      main: "#FF8D8D",
+      main: "#FF5C5C",
     },
     text: {
       primary: "#30343F",
@@ -34,7 +34,7 @@ export const mainTheme = createTheme({
 export const bryTheme = createTheme({
   palette: {
     primary: {
-      main: "#FFFAFA",
+      main: "#273469",
     },
     secondary: {
       main: "#A5D5FF",

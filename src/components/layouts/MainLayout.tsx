@@ -25,40 +25,43 @@ export const MainLayout = () => {
           variant="h2"
           fontWeight={900}
           color={theme.palette.text.secondary}
-          sx={{ marginLeft: 3, marginTop: 2 }}
+          sx={{ marginLeft: 3, marginTop: 2, position: "absolute" }}
         >
           MAUTE.US
         </Typography>
       </Link>
+      <Box
+        sx={{
+          position: "absolute",
+          top: -750,
+          left: -650,
+          zIndex: -1,
+        }}
+      >
+        <Blob fill={theme.palette.background.default} />
+      </Box>
+      <Box
+        sx={{
+          zIndex: -1,
+          position: "absolute",
+          top: "60vh",
+          float: "right",
+        }}
+      >
+        <Blob fill={theme.palette.background.default} />
+      </Box>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Box
           sx={{
-            position: "absolute",
-            top: -750,
-            left: -650,
-            zIndex: -1,
-          }}
-        >
-          <Blob fill={theme.palette.background.default} />
-        </Box>
-        <Box
-          sx={{
+            overflowY: "auto",
+            maxHeight: "90vh",
             zIndex: 2,
-            maxWidth: "90vw",
+            width: "80vw",
             marginTop: 10,
+            "::-webkit-scrollbar": { display: "none" },
           }}
         >
           <Outlet />
-        </Box>
-        <Box
-          sx={{
-            zIndex: -1,
-            position: "absolute",
-            top: "60vh",
-            float: "right",
-          }}
-        >
-          <Blob fill={theme.palette.background.default} />
         </Box>
       </Container>
     </MainLayoutRoot>
