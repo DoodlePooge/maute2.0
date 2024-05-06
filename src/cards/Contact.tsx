@@ -36,7 +36,7 @@ export const Contact: FC<props> = (props) => {
     event: React.SyntheticEvent | Event,
     reason?: string
   ) => {
-    if (reason === "clickaway") {
+    if (event && reason === "clickaway") {
       return
     }
     setOpen(false)
