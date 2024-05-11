@@ -1,26 +1,26 @@
-import { Box, Card, List, Typography } from "@mui/material"
-import { FC } from "react"
+import { Box, Card, List, Typography } from "@mui/material";
+import { FC } from "react";
 
 type content = {
-  subheader: string
-  bold?: string
-  tiny?: string
-  items?: string[]
-  bullets?: string[]
-}
+  subheader: string;
+  bold?: string;
+  tiny?: string;
+  items?: string[];
+  bullets?: string[];
+};
 
 type info = {
-  header: string
-  contents: content[]
-}
+  header: string;
+  contents: content[];
+};
 
 interface props {
-  info: info
+  info: info;
 }
 
 export const Resume: FC<props> = (props) => {
-  const { info } = props
-  console.log(info)
+  const { info } = props;
+  console.log(info);
   return (
     <Card sx={{ mb: 3 }}>
       <Box sx={{ m: 2 }}>
@@ -44,5 +44,5 @@ export const Resume: FC<props> = (props) => {
         ))}
       </Box>
     </Card>
-  )
-}
+  );
+};

@@ -1,12 +1,12 @@
-import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
-import { FC } from "react"
-import paige from "../assets/paige.webp"
-import pContent from "../content/paige.json"
-import { Contact } from "../cards/Contact"
-import { Resume } from "../cards/Resume"
+import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { FC } from "react";
+import paige from "../assets/paige.webp";
+import pContent from "../content/paige.json";
+import { Contact } from "../cards/Contact";
+import { Resume } from "../cards/Resume";
 
 export const Paige: FC = () => {
-  const theme = useTheme()
+  const theme = useTheme();
   return (
     <>
       <Stack direction="row">
@@ -47,5 +47,5 @@ export const Paige: FC = () => {
         </Grid>
       </Grid>
     </>
-  )
-}
+  );
+};

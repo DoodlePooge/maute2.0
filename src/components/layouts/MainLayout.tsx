@@ -5,19 +5,19 @@ import {
   Typography,
   styled,
   useTheme,
-} from "@mui/material"
-import { Outlet } from "react-router-dom"
-import { Blob } from "../misc/Blob"
+} from "@mui/material";
+import { Outlet } from "react-router-dom";
+import { Blob } from "../misc/Blob";
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   height: "100vh",
   width: "100vw",
   position: "fixed",
-}))
+}));
 
 export const MainLayout = () => {
-  const theme = useTheme()
+  const theme = useTheme();
   return (
     <MainLayoutRoot>
       <Link href="/" underline="none">
@@ -65,5 +65,5 @@ export const MainLayout = () => {
         </Box>
       </Container>
     </MainLayoutRoot>
-  )
-}
+  );
+};
