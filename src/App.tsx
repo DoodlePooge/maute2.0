@@ -7,6 +7,7 @@ import { MainPage } from "./pages/MainPage";
 import { Paige } from "./pages/Paige";
 import { Bryan } from "./pages/Bryan";
 import { NoPage } from "./pages/NoPage";
+import { ThemePicker } from "./pages/ThemePicker";
 
 function App() {
   const pathname = window.location.pathname;
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<MainPage />} />
             <Route path="paige" element={<Paige />} />
+            <Route path="theme-picker" element={<ThemePicker />} />
             <Route path="bryan" element={<Bryan />} />
             <Route path="*" element={<NoPage />} />
           </Route>
