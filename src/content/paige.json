@@ -1,48 +1,98 @@
 {
   "contact": {
-    "email": "test@gmail.com",
-    "phone": "(555) 555-5555",
-    "location": "Washington DC",
-    "github": { "label": "Example", "link": "https://maute.us" },
-    "links": [{ "label": "Maute.US", "link": "https://maute.us" }]
+    "email": "paige@maute.us",
+    "phone": "(973) 476-2484",
+    "location": "Boonton NJ",
+    "github": {
+      "label": "DoodlePooge",
+      "link": "https://github.com/DoodlePooge"
+    }
   },
   "primary": [
     {
-      "header": "Primary Example1",
+      "header": "Work Experience",
       "contents": [
         {
-          "subheader": "Subheader1",
-          "bold": "BoldText",
-          "tiny": "Tiny Text",
-          "bullets": ["This is one thing", "this is another thing"]
+          "subheader": "Junior Software Engineer",
+          "bold": "Obscurity Labs LLC",
+          "tiny": "MAY 2022 - PRESENT",
+          "bullets": [
+            "Managed interns for an open source project",
+            "Developed UI features for a web application",
+            "Implemented backend software tests",
+            "Collaborated with both large and small agile teams",
+            "Debugged frontend issues on a large scale project"
+          ]
+        },
+        {
+          "subheader": "President",
+          "bold": "ESU Computer Science Organization",
+          "tiny": "MAY 2020 - MAY 2022",
+          "bullets": [
+            "Awarded certificate of recognition for maintaining an active club during a global pandemic",
+            "Received Student Leader award",
+            "Organized two successful charity live streams raising over $4000 for children’s hospitals",
+            "Created opportunities for members with roles, projects, and workshops"
+          ]
+        },
+        {
+          "subheader": "Web Content Assistant",
+          "bold": "East Stroudsburg University Academic Computing",
+          "tiny": "JAN 2020 - MAY 2022",
+          "bullets": [
+            "Created software for automated web testing in Javascript using the Selenium and mocha libraries",
+            "Used PowerShell scripting and SQL to convert all images to .webp",
+            "Refined accessibility and bug fixes for screen readers",
+            "Sent reports to various departments on their content",
+            "Researched, compared, and setup digital signage"
+          ]
         }
       ]
     },
     {
-      "header": "Primary Example1",
+      "header": "Projects",
       "contents": [
         {
-          "subheader": "Subheader1",
-          "bold": "BoldText",
-          "tiny": "Tiny Text",
-          "bullets": ["This is one thing", "this is another thing"]
+          "subheader": "Project Lead",
+          "bold": "Darkmoon",
+          "tiny": "JUL 2022-AUG 2022, JUL 2023-AUG 2023",
+          "bullets": [
+            "Planned out the end goal, sprints, and tickets",
+            "Guided the team of interns through the environment",
+            "Ran daily meetings to make sure we were on task",
+            "Presented the work to the Commonwealth Cyber Initiative"
+          ]
         }
       ]
-    },
-    {
-      "header": "Primary Example2",
-      "contents": [{ "subheader": "Subheader2", "bullets": ["Hai"] }]
     }
   ],
   "secondary": [
     {
-      "header": "Secondary Example",
+      "header": "Education",
       "contents": [
         {
-          "subheader": "Subheader",
-          "bold": "Bold Text",
-          "tiny": "Tiny Text",
-          "items": ["item1", "item2"]
+          "subheader": "Computer Science (B.S)\nMinor in Mathematics",
+          "bold": "East Stroudsburg University",
+          "tiny": "MAY 2023"
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "contents": [
+        {
+          "subheader": "Programming Languages",
+          "items": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "Powershell Scripting"
+          ]
+        },
+        {
+          "subheader": "Frameworks",
+          "items": ["FastAPI", "React", "AngularJS", "Django"]
         }
       ]
     }
