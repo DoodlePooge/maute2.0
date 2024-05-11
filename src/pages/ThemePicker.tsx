@@ -1,7 +1,7 @@
-import { Box, Grid, Link } from "@mui/material";
-import { FC } from "react";
-import { allThemes } from "../themes";
-import { Thumbnail } from "../components/misc/Thumbnail";
+import { Box, Grid, Link } from "@mui/material"
+import { FC } from "react"
+import { allThemes } from "../themes"
+import { Thumbnail } from "../components/misc/Thumbnail"
 
 export const ThemePicker: FC = () => {
   //   const theme = useTheme()
@@ -11,7 +11,16 @@ export const ThemePicker: FC = () => {
         {allThemes.map((theme) => (
           <Grid item>
             <Link>
-              <Box>
+              <Box
+                sx={{
+                  mx: 1,
+                  p: 1,
+                  backgroundColor: theme.palette.action.hover,
+                  border: 1,
+                  borderRadius: 1,
+                  borderColor: theme.palette.action.active,
+                }}
+              >
                 <Thumbnail
                   default={theme.palette.background.default}
                   paper={theme.palette.background.paper}
@@ -22,5 +31,5 @@ export const ThemePicker: FC = () => {
         ))}
       </Grid>
     </>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import { Theme, createTheme } from "@mui/material/styles";
+import { Theme, createTheme } from "@mui/material/styles"
 
 // https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-ffbdab-fafaff-eee8ff-e2d6ff-273469-1e2749
 // https://coolors.co/30343f-ff6969-ffe37c-94ff97-a5d5ff-fffafa-ffc9c9-ff9797-273469-1e2749
@@ -31,7 +31,7 @@ export const mainTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
-});
+})
 export const bryTheme = createTheme({
   palette: {
     primary: {
@@ -59,7 +59,7 @@ export const bryTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
-});
+})
 
 export const blueTheme = createTheme({
   palette: {
@@ -88,7 +88,7 @@ export const blueTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
-});
+})
 
 export const greenTheme = createTheme({
   palette: {
@@ -117,7 +117,7 @@ export const greenTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
-});
+})
 
 export const orangeTheme = createTheme({
   palette: {
@@ -146,7 +146,7 @@ export const orangeTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
-});
+})
 
 export const allThemes: Theme[] = [
   mainTheme,
@@ -154,4 +154,4 @@ export const allThemes: Theme[] = [
   blueTheme,
   greenTheme,
   orangeTheme,
-];
+]
