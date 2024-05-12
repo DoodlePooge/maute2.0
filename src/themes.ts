@@ -4,7 +4,9 @@ import { Theme, createTheme } from "@mui/material/styles"
 // https://coolors.co/30343f-ff6969-ffe37c-94ff97-a5d5ff-fffafa-ffc9c9-ff9797-273469-1e2749
 // https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-e8f8ff-d6e9ff-273469-1e2749
 
-export const mainTheme = createTheme({
+// LIGHT
+
+const mainTheme = createTheme({
   palette: {
     primary: {
       main: "#273469",
@@ -32,10 +34,10 @@ export const mainTheme = createTheme({
     },
   },
 })
-export const bryTheme = createTheme({
+const bryTheme = createTheme({
   palette: {
     primary: {
-      main: "#273469",
+      main: "#1E2749",
     },
     secondary: {
       main: "#A5D5FF",
@@ -54,14 +56,14 @@ export const bryTheme = createTheme({
       main: "#FF6969",
     },
     text: {
-      primary: "#30343F",
-      secondary: "#273469",
+      primary: "#23272F",
+      secondary: "#1E2749",
       disabled: "#B2B2B2",
     },
   },
 })
 
-export const blueTheme = createTheme({
+const blueTheme = createTheme({
   palette: {
     primary: {
       main: "#273469",
@@ -90,7 +92,7 @@ export const blueTheme = createTheme({
   },
 })
 
-export const greenTheme = createTheme({
+const greenTheme = createTheme({
   palette: {
     primary: {
       main: "#273469",
@@ -119,7 +121,7 @@ export const greenTheme = createTheme({
   },
 })
 
-export const orangeTheme = createTheme({
+const orangeTheme = createTheme({
   palette: {
     primary: {
       main: "#273469",
@@ -147,10 +149,42 @@ export const orangeTheme = createTheme({
     },
   },
 })
+
+// DARK
+export const mainDark = createTheme({
+  palette: {
+    primary: {
+      main: "#E2D6FF",
+    },
+    secondary: {
+      main: "#FFBDAB",
+    },
+    background: {
+      default: "#1E2749",
+      paper: "#273469",
+    },
+    success: {
+      main: "#BBF9BD",
+    },
+    warning: {
+      main: "#FFECA8",
+    },
+    error: {
+      main: "#FF8D8D",
+    },
+    text: {
+      primary: "#FAFAFF",
+      secondary: "#E2D6FF",
+      disabled: "#EEE8FF",
+    },
+  },
+})
+
 export const themeDict: { [key: string]: Theme } = {
-  mainT: mainTheme,
-  bryT: bryTheme,
-  blueT: blueTheme,
-  greenT: greenTheme,
-  orangeT: orangeTheme,
+  Purple: mainTheme,
+  Red: bryTheme,
+  Blue: blueTheme,
+  Green: greenTheme,
+  Orange: orangeTheme,
+  Navy: mainDark,
 }

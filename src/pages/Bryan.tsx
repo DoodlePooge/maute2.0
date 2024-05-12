@@ -8,7 +8,7 @@ import { ThemeContext } from "../context"
 
 export const Bryan: FC = () => {
   const { setTheme } = useContext(ThemeContext)
-  setTheme("bryT", false)
+  setTheme("Red", false)
 
   const theme = useTheme()
   return (

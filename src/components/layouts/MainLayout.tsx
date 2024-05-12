@@ -57,7 +57,7 @@ export const MainLayout = () => {
             maxHeight: "90vh",
             zIndex: 2,
             width: "80vw",
-            marginTop: 10,
+            marginTop: 13,
             "::-webkit-scrollbar": { display: "none" },
           }}
         >

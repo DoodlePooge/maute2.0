@@ -8,7 +8,7 @@ interface defaultThemeContext {
 }
 
 const CreateDefaultTheme = () => {
-  const currTheme = localStorage.getItem("themeTag") || "mainT"
+  const currTheme = localStorage.getItem("themeTag") || "Purple"
 
   return { theme: themeDict[currTheme], setTheme: () => {} }
 }

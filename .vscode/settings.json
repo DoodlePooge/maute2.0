@@ -3,5 +3,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.semi": false
+  "prettier.semi": false,
+  "colorize.languages": ["javascript", "typescript"]
 }
