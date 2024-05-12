@@ -155,3 +155,11 @@ export const allThemes: Theme[] = [
   greenTheme,
   orangeTheme,
 ]
+
+export const themeDict: { [key: string]: Theme } = {
+  mainT: mainTheme,
+  bryT: bryTheme,
+  blueT: blueTheme,
+  greenT: greenTheme,
+  orangeT: orangeTheme,
+}

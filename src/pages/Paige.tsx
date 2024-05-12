@@ -1,11 +1,15 @@
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
-import { FC } from "react"
+import { FC, useContext } from "react"
 import paige from "../assets/paige.webp"
 import pContent from "../content/paige.json"
 import { Contact } from "../cards/Contact"
 import { Resume } from "../cards/Resume"
+import { ThemeContext } from "../context"
 
 export const Paige: FC = () => {
+  const { setTheme } = useContext(ThemeContext)
+  setTheme("mainT")
+
   const theme = useTheme()
   return (
     <>
