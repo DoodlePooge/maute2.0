@@ -147,15 +147,6 @@ export const orangeTheme = createTheme({
     },
   },
 })
-
-export const allThemes: Theme[] = [
-  mainTheme,
-  bryTheme,
-  blueTheme,
-  greenTheme,
-  orangeTheme,
-]
-
 export const themeDict: { [key: string]: Theme } = {
   mainT: mainTheme,
   bryT: bryTheme,

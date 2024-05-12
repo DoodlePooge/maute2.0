@@ -7,17 +7,25 @@ import { Paige } from "./pages/Paige"
 import { Bryan } from "./pages/Bryan"
 import { NoPage } from "./pages/NoPage"
 import { ThemePicker } from "./pages/ThemePicker"
-import { themeDict } from "./themes"
-import { useState } from "react"
 import { ThemeContext } from "./context"
+import { useState } from "react"
+import { themeDict } from "./themes"
 
 function App() {
-  const initialState = localStorage.getItem("theme") || "mainT"
-  const [theme, setTheme] = useState(initialState)
+  // const { theme, setTheme } = useContext(ThemeContext)
+
+  const currTheme = localStorage.getItem("themeTag") || "mainT"
+  const [theme, setNewTheme] = useState(themeDict[currTheme])
+  const setTheme = (newTheme: string, cache: boolean = true) => {
+    if (cache) {
+      localStorage.setItem("themeTag", newTheme)
+    }
+    setNewTheme(themeDict[newTheme])
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <ThemeProvider theme={themeDict[theme]}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <BrowserRouter>
           <Routes>

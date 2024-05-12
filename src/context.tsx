@@ -1,11 +1,17 @@
-import { Dispatch, createContext } from "react"
+import { createContext } from "react"
+import { themeDict } from "./themes"
+import { Theme } from "@mui/material"
 
 interface defaultThemeContext {
-  theme: string
-  setTheme: Dispatch<React.SetStateAction<string>>
+  theme: Theme
+  setTheme: (newTheme: string, cache?: boolean) => void
 }
 
-export const ThemeContext = createContext<defaultThemeContext>({
-  theme: "mainT",
-  setTheme: () => {},
-})
+const CreateDefaultTheme = () => {
+  const currTheme = localStorage.getItem("themeTag") || "mainT"
+
+  return { theme: themeDict[currTheme], setTheme: () => {} }
+}
+
+export const ThemeContext =
+  createContext<defaultThemeContext>(CreateDefaultTheme())
