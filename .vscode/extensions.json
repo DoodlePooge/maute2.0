@@ -8,6 +8,7 @@
     "christian-kohler.npm-intellisense",
     "davidanson.vscode-markdownlint",
     "esbenp.prettier-vscode",
-    "shd101wyy.markdown-preview-enhanced"
+    "shd101wyy.markdown-preview-enhanced",
+    "kamikillerto.vscode-colorize"
   ]
 }

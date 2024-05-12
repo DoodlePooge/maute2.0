@@ -1,10 +1,10 @@
-import { Avatar, Box, Link, Stack, Typography, useTheme } from "@mui/material";
-import { FC } from "react";
-import paige from "../assets/paige.webp";
-import bryan from "../assets/bryan.jpg";
+import { Avatar, Box, Link, Stack, Typography, useTheme } from "@mui/material"
+import { FC } from "react"
+import paige from "../assets/paige.webp"
+import bryan from "../assets/bryan.jpg"
 
 export const MainPage: FC = () => {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <Box>
       <Stack direction="row" sx={{ justifyContent: "center" }}>
@@ -37,5 +37,5 @@ export const MainPage: FC = () => {
         Site is currently being worked on, come back later.
       </Typography>
     </Box>
-  );
-};
+  )
+}

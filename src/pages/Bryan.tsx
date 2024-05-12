@@ -1,12 +1,16 @@
-import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material";
-import { FC } from "react";
-import bryan from "../assets/bryan.jpg";
-import bContent from "../content/bryan.json";
-import { Contact } from "../cards/Contact";
-import { Resume } from "../cards/Resume";
+import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
+import { FC, useContext } from "react"
+import bryan from "../assets/bryan.jpg"
+import bContent from "../content/bryan.json"
+import { Contact } from "../cards/Contact"
+import { Resume } from "../cards/Resume"
+import { ThemeContext } from "../context"
 
 export const Bryan: FC = () => {
-  const theme = useTheme();
+  const { setTheme } = useContext(ThemeContext)
+  setTheme("Red", false)
+
+  const theme = useTheme()
   return (
     <>
       <Stack direction="row">
@@ -47,5 +51,5 @@ export const Bryan: FC = () => {
         </Grid>
       </Grid>
     </>
-  );
-};
+  )
+}

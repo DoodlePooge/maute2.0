@@ -7,59 +7,59 @@ import {
   Slide,
   Snackbar,
   Typography,
-} from "@mui/material";
-import { FC, useState } from "react";
-import EmailIcon from "@mui/icons-material/Email";
-import copy from "clipboard-copy";
-import PlaceIcon from "@mui/icons-material/Place";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import PhoneIcon from "@mui/icons-material/Phone";
-import PublicIcon from "@mui/icons-material/Public";
+} from "@mui/material"
+import { FC, useState } from "react"
+import EmailIcon from "@mui/icons-material/Email"
+import copy from "clipboard-copy"
+import PlaceIcon from "@mui/icons-material/Place"
+import GitHubIcon from "@mui/icons-material/GitHub"
+import PhoneIcon from "@mui/icons-material/Phone"
+import PublicIcon from "@mui/icons-material/Public"
 
 type info = {
-  email: string;
-  phone: string;
-  location?: string;
-  github?: { label: string; link: string };
-  links?: { label: string; link: string }[];
-};
+  email: string
+  phone: string
+  location?: string
+  github?: { label: string; link: string }
+  links?: { label: string; link: string }[]
+}
 
 interface props {
-  info: info;
+  info: info
 }
 
 export const Contact: FC<props> = (props) => {
-  const { info } = props;
-  const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState("");
+  const { info } = props
+  const [open, setOpen] = useState(false)
+  const [message, setMessage] = useState("")
   const handleClose = (
     event: React.SyntheticEvent | Event,
     reason?: string,
   ) => {
     if (event && reason === "clickaway") {
-      return;
+      return
     }
-    setOpen(false);
-  };
+    setOpen(false)
+  }
   const maps = info.location
     ? "https://www.google.com/maps/place/" + info.location.replace(" ", "+")
-    : "/";
+    : "/"
   const copyEmail = () => {
     if (open) {
-      setOpen(false);
+      setOpen(false)
     }
-    setMessage("Email Copied!");
-    setOpen(true);
-    copy(info.email);
-  };
+    setMessage("Email Copied!")
+    setOpen(true)
+    copy(info.email)
+  }
   const copyPhone = () => {
     if (open) {
-      setOpen(false);
+      setOpen(false)
     }
-    setMessage("Phone Number Copied!");
-    setOpen(true);
-    copy(info.phone);
-  };
+    setMessage("Phone Number Copied!")
+    setOpen(true)
+    copy(info.phone)
+  }
   return (
     <>
       <Slide in={open} direction="up">
@@ -113,5 +113,5 @@ export const Contact: FC<props> = (props) => {
         </Box>
       </Card>
     </>
-  );
-};
+  )
+}
