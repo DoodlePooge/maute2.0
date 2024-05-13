@@ -2,8 +2,8 @@ import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
 import { FC, useContext } from "react"
 import bryan from "../assets/bryan.jpg"
 import bContent from "../content/bryan.json"
-import { Contact } from "../cards/Contact"
-import { Resume } from "../cards/Resume"
+import { Contact } from "../components/cards/Contact"
+import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"
 
 export const Bryan: FC = () => {
@@ -13,7 +13,7 @@ export const Bryan: FC = () => {
   const theme = useTheme()
   return (
     <>
-      <Stack direction="row">
+      <Stack direction={{ xs: "column", md: "row" }}>
         <Avatar
           src={bryan}
           sx={{
@@ -31,8 +31,10 @@ export const Bryan: FC = () => {
             alignContent: "center",
           }}
         >
-          <Typography variant="h1">Bryan</Typography>
-          <Typography variant="h2" color="primary">
+          <Typography variant="h1" fontWeight={800}>
+            Bryan
+          </Typography>
+          <Typography variant="h2" fontWeight={500} color="primary">
             Social Media Person :)
           </Typography>
         </Box>
@@ -41,12 +43,12 @@ export const Bryan: FC = () => {
         <Grid item xs={12} md={4}>
           <Contact info={bContent.contact}></Contact>
           {bContent.secondary.map((card) => (
-            <Resume info={card} />
+            <Resume info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
           {bContent.primary.map((card) => (
-            <Resume info={card} />
+            <Resume info={card} primary={true} />
           ))}
         </Grid>
       </Grid>

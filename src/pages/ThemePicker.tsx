@@ -1,7 +1,7 @@
 import { Box, Grid, ToggleButton, Typography } from "@mui/material"
 import { FC, useContext } from "react"
 import { themeDict } from "../themes"
-import { Thumbnail } from "../components/misc/Thumbnail"
+import { Thumbnail } from "../components/images/Thumbnail"
 import { ThemeContext } from "../context"
 
 export const ThemePicker: FC = () => {
@@ -26,7 +26,7 @@ export const ThemePicker: FC = () => {
           />
         </ToggleButton>
         <Typography sx={{ margin: 1 }}>{key}</Typography>
-      </Grid>,
+      </Grid>
     )
   }
   return (

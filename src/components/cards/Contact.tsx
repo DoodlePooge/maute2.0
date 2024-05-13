@@ -34,7 +34,7 @@ export const Contact: FC<props> = (props) => {
   const [message, setMessage] = useState("")
   const handleClose = (
     event: React.SyntheticEvent | Event,
-    reason?: string,
+    reason?: string
   ) => {
     if (event && reason === "clickaway") {
       return
@@ -67,24 +67,27 @@ export const Contact: FC<props> = (props) => {
           <Alert severity="success">{message}</Alert>
         </Snackbar>
       </Slide>
-      <Card sx={{ mb: 3 }}>
-        <Box sx={{ m: 2 }}>
-          <Typography variant="h5" sx={{ fontWeight: 600 }}>
+      <Card sx={{ m: 1, mb: 2 }}>
+        <Box sx={{ m: 3 }}>
+          <Typography variant="h5" sx={{ fontWeight: 800 }}>
             Contact Information
           </Typography>
-          <Typography>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
             <IconButton color="primary" onClick={copyEmail}>
               <EmailIcon />
             </IconButton>
             {info.email}
           </Typography>
-          <Typography>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
             <IconButton color="primary" onClick={copyPhone}>
               <PhoneIcon />
             </IconButton>
             {info.phone}
           </Typography>
-          <Typography hidden={!info.location}>
+          <Typography
+            hidden={!info.location}
+            sx={{ display: "flex", alignItems: "center" }}
+          >
             <Link href={maps}>
               <IconButton color="primary">
                 <PlaceIcon />
@@ -92,7 +95,10 @@ export const Contact: FC<props> = (props) => {
             </Link>
             {info.location}
           </Typography>
-          <Typography hidden={!info.github}>
+          <Typography
+            hidden={!info.github}
+            sx={{ display: "flex", alignItems: "center" }}
+          >
             <Link href={info.github?.link}>
               <IconButton color="primary">
                 <GitHubIcon />
@@ -101,7 +107,7 @@ export const Contact: FC<props> = (props) => {
             {info.github?.label}
           </Typography>
           {info.links?.map((site) => (
-            <Typography>
+            <Typography sx={{ display: "flex", alignItems: "center" }}>
               <Link href={site.link}>
                 <IconButton color="primary">
                   <PublicIcon />

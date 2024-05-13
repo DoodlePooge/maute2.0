@@ -2,8 +2,8 @@ import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
 import { FC, useContext } from "react"
 import paige from "../assets/paige.webp"
 import pContent from "../content/paige.json"
-import { Contact } from "../cards/Contact"
-import { Resume } from "../cards/Resume"
+import { Contact } from "../components/cards/Contact"
+import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"
 
 export const Paige: FC = () => {
@@ -13,7 +13,7 @@ export const Paige: FC = () => {
   const theme = useTheme()
   return (
     <>
-      <Stack direction="row">
+      <Stack direction={{ xs: "column", md: "row" }}>
         <Avatar
           src={paige}
           sx={{
@@ -31,8 +31,10 @@ export const Paige: FC = () => {
             alignContent: "center",
           }}
         >
-          <Typography variant="h1">Paige</Typography>
-          <Typography variant="h2" color="primary">
+          <Typography variant="h1" fontWeight={800}>
+            Paige
+          </Typography>
+          <Typography variant="h2" fontWeight={500} color="primary">
             Junior Software Engineer
           </Typography>
         </Box>
@@ -41,12 +43,12 @@ export const Paige: FC = () => {
         <Grid item xs={12} md={4}>
           <Contact info={pContent.contact}></Contact>
           {pContent.secondary.map((card) => (
-            <Resume info={card} />
+            <Resume info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
           {pContent.primary.map((card) => (
-            <Resume info={card} />
+            <Resume info={card} primary={true} />
           ))}
         </Grid>
       </Grid>

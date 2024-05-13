@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material"
 import { Outlet } from "react-router-dom"
-import { Blob } from "../misc/Blob"
+import { Blob } from "../images/Blob"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -53,11 +53,12 @@ export const MainLayout = () => {
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Box
           sx={{
-            overflowY: "auto",
+            mask: "linear-gradient(to top, rgba(0,0,0, 1) 0, rgba(0,0,0, 1) 97%, rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 20%);",
+            overflow: "auto",
             maxHeight: "90vh",
             zIndex: 2,
-            width: "80vw",
-            marginTop: 13,
+            width: "85vw",
+            marginTop: 11,
             "::-webkit-scrollbar": { display: "none" },
           }}
         >

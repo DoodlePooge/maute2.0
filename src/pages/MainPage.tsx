@@ -7,7 +7,10 @@ export const MainPage: FC = () => {
   const theme = useTheme()
   return (
     <Box>
-      <Stack direction="row" sx={{ justifyContent: "center" }}>
+      <Stack
+        direction={{ xs: "column", sm: "row" }}
+        sx={{ justifyContent: "center", alignItems: "center" }}
+      >
         <Link href="/paige">
           <Avatar
             src={paige}

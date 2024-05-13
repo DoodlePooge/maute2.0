@@ -1,8 +1,26 @@
 import { Theme, createTheme } from "@mui/material/styles"
 
-// https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-ffbdab-fafaff-eee8ff-e2d6ff-273469-1e2749
-// https://coolors.co/30343f-ff6969-ffe37c-94ff97-a5d5ff-fffafa-ffc9c9-ff9797-273469-1e2749
+// https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-fafaff-eee8ff-e2d6ff-273469-1e2749
+// https://coolors.co/23272f-ff6969-ffe37c-94ff97-fffafa-ffc9c9-ff9797-1e2749
 // https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-e8f8ff-d6e9ff-273469-1e2749
+
+const common = {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 1000,
+      lg: 1300,
+      xl: 1536,
+    },
+  },
+  typography: {
+    fontFamily: ['"Montserrat"', "sans-serif"].join(","),
+  },
+  shape: {
+    borderRadius: 4,
+  },
+}
 
 // LIGHT
 
@@ -33,6 +51,7 @@ const mainTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
+  ...common,
 })
 const bryTheme = createTheme({
   palette: {
@@ -61,6 +80,7 @@ const bryTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
+  ...common,
 })
 
 const blueTheme = createTheme({
@@ -90,6 +110,7 @@ const blueTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
+  ...common,
 })
 
 const greenTheme = createTheme({
@@ -119,6 +140,7 @@ const greenTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
+  ...common,
 })
 
 const orangeTheme = createTheme({
@@ -148,6 +170,7 @@ const orangeTheme = createTheme({
       disabled: "#B2B2B2",
     },
   },
+  ...common,
 })
 
 // DARK
@@ -178,6 +201,7 @@ export const mainDark = createTheme({
       disabled: "#EEE8FF",
     },
   },
+  ...common,
 })
 
 export const themeDict: { [key: string]: Theme } = {
