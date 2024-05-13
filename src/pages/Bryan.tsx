@@ -13,21 +13,20 @@ export const Bryan: FC = () => {
   const theme = useTheme()
   return (
     <>
-      <Stack direction={{ xs: "column", md: "row" }}>
+      <Stack direction={{ xs: "column", md: "row" }} m={2}>
         <Avatar
           src={bryan}
           sx={{
             border: 10,
             borderColor: theme.palette.background.paper,
-            m: 2,
             width: 300,
             height: 300,
           }}
         />
         <Box
           sx={{
-            m: 2,
-            height: 300,
+            m: "2vw",
+            maxHeight: 300,
             alignContent: "center",
           }}
         >
