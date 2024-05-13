@@ -6,7 +6,7 @@ import {
   Link,
   Slide,
   Snackbar,
-  Typography,
+  Typography
 } from "@mui/material"
 import { FC, useState } from "react"
 import EmailIcon from "@mui/icons-material/Email"
@@ -34,7 +34,7 @@ export const Contact: FC<props> = (props) => {
   const [message, setMessage] = useState("")
   const handleClose = (
     event: React.SyntheticEvent | Event,
-    reason?: string,
+    reason?: string
   ) => {
     if (event && reason === "clickaway") {
       return

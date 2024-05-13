@@ -21,14 +21,14 @@ export const Paige: FC = () => {
             borderColor: theme.palette.background.paper,
             m: 2,
             width: 300,
-            height: 300,
+            height: 300
           }}
         />
         <Box
           sx={{
             m: 2,
             height: 300,
-            alignContent: "center",
+            alignContent: "center"
           }}
         >
           <Typography variant="h1" fontWeight={800}>

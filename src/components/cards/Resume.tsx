@@ -28,12 +28,11 @@ export const Resume: FC<props> = (props) => {
       <Box sx={{ m: 3 }}>
         {primary ? (
           <Typography
-            variant="h3"
+            variant="h4"
             sx={{
               fontWeight: 800,
               borderBottom: 3,
-              maxWidth: "70%",
-              marginBottom: 1,
+              marginBottom: 1
             }}
           >
             {info.header}
@@ -43,7 +42,7 @@ export const Resume: FC<props> = (props) => {
             variant="h5"
             sx={{
               fontWeight: 800,
-              marginBottom: 1,
+              marginBottom: 1
             }}
           >
             {info.header}

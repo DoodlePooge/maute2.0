@@ -11,15 +11,15 @@ const common = {
       sm: 600,
       md: 1000,
       lg: 1300,
-      xl: 1536,
-    },
+      xl: 1536
+    }
   },
   typography: {
-    fontFamily: ['"Montserrat"', "sans-serif"].join(","),
+    fontFamily: ['"Montserrat"', "sans-serif"].join(",")
   },
   shape: {
-    borderRadius: 4,
-  },
+    borderRadius: 4
+  }
 }
 
 // LIGHT
@@ -27,181 +27,181 @@ const common = {
 const mainTheme = createTheme({
   palette: {
     primary: {
-      main: "#273469",
+      main: "#273469"
     },
     secondary: {
-      main: "#FFBDAB",
+      main: "#FFBDAB"
     },
     background: {
       default: "#E2D6FF",
-      paper: "#EEE8FF",
+      paper: "#EEE8FF"
     },
     success: {
-      main: "#69F26D",
+      main: "#69F26D"
     },
     warning: {
-      main: "#FFE070",
+      main: "#FFE070"
     },
     error: {
-      main: "#FF5C5C",
+      main: "#FF5C5C"
     },
     text: {
       primary: "#30343F",
       secondary: "#273469",
-      disabled: "#B2B2B2",
-    },
+      disabled: "#B2B2B2"
+    }
   },
-  ...common,
+  ...common
 })
 const bryTheme = createTheme({
   palette: {
     primary: {
-      main: "#1E2749",
+      main: "#1E2749"
     },
     secondary: {
-      main: "#A5D5FF",
+      main: "#A5D5FF"
     },
     background: {
       default: "#FF9797",
-      paper: "#FFC9C9",
+      paper: "#FFC9C9"
     },
     success: {
-      main: "#94FF97",
+      main: "#94FF97"
     },
     warning: {
-      main: "#FFE37C",
+      main: "#FFE37C"
     },
     error: {
-      main: "#FF6969",
+      main: "#FF6969"
     },
     text: {
       primary: "#23272F",
       secondary: "#1E2749",
-      disabled: "#B2B2B2",
-    },
+      disabled: "#B2B2B2"
+    }
   },
-  ...common,
+  ...common
 })
 
 const blueTheme = createTheme({
   palette: {
     primary: {
-      main: "#273469",
+      main: "#273469"
     },
     secondary: {
-      main: "#A5D5FF",
+      main: "#A5D5FF"
     },
     background: {
       default: "#D6E9FF",
-      paper: "#E8F8FF",
+      paper: "#E8F8FF"
     },
     success: {
-      main: "#94FF97",
+      main: "#94FF97"
     },
     warning: {
-      main: "#FFE37C",
+      main: "#FFE37C"
     },
     error: {
-      main: "#FF6969",
+      main: "#FF6969"
     },
     text: {
       primary: "#30343F",
       secondary: "#273469",
-      disabled: "#B2B2B2",
-    },
+      disabled: "#B2B2B2"
+    }
   },
-  ...common,
+  ...common
 })
 
 const greenTheme = createTheme({
   palette: {
     primary: {
-      main: "#273469",
+      main: "#273469"
     },
     secondary: {
-      main: "#A5D5FF",
+      main: "#A5D5FF"
     },
     background: {
       default: "#D6FFD8",
-      paper: "#EBFFE8",
+      paper: "#EBFFE8"
     },
     success: {
-      main: "#94FF97",
+      main: "#94FF97"
     },
     warning: {
-      main: "#FFE37C",
+      main: "#FFE37C"
     },
     error: {
-      main: "#FF6969",
+      main: "#FF6969"
     },
     text: {
       primary: "#30343F",
       secondary: "#273469",
-      disabled: "#B2B2B2",
-    },
+      disabled: "#B2B2B2"
+    }
   },
-  ...common,
+  ...common
 })
 
 const orangeTheme = createTheme({
   palette: {
     primary: {
-      main: "#273469",
+      main: "#273469"
     },
     secondary: {
-      main: "#A5D5FF",
+      main: "#A5D5FF"
     },
     background: {
       default: "#FFD4B3",
-      paper: "#FFE9D6",
+      paper: "#FFE9D6"
     },
     success: {
-      main: "#94FF97",
+      main: "#94FF97"
     },
     warning: {
-      main: "#FFE37C",
+      main: "#FFE37C"
     },
     error: {
-      main: "#FF6969",
+      main: "#FF6969"
     },
     text: {
       primary: "#30343F",
       secondary: "#273469",
-      disabled: "#B2B2B2",
-    },
+      disabled: "#B2B2B2"
+    }
   },
-  ...common,
+  ...common
 })
 
 // DARK
 export const mainDark = createTheme({
   palette: {
     primary: {
-      main: "#E2D6FF",
+      main: "#E2D6FF"
     },
     secondary: {
-      main: "#FFBDAB",
+      main: "#FFBDAB"
     },
     background: {
       default: "#1E2749",
-      paper: "#273469",
+      paper: "#273469"
     },
     success: {
-      main: "#BBF9BD",
+      main: "#BBF9BD"
     },
     warning: {
-      main: "#FFECA8",
+      main: "#FFECA8"
     },
     error: {
-      main: "#FF8D8D",
+      main: "#FF8D8D"
     },
     text: {
       primary: "#FAFAFF",
       secondary: "#E2D6FF",
-      disabled: "#EEE8FF",
-    },
+      disabled: "#EEE8FF"
+    }
   },
-  ...common,
+  ...common
 })
 
 export const themeDict: { [key: string]: Theme } = {
@@ -210,5 +210,5 @@ export const themeDict: { [key: string]: Theme } = {
   Blue: blueTheme,
   Green: greenTheme,
   Orange: orangeTheme,
-  Navy: mainDark,
+  Navy: mainDark
 }

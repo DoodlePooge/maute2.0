@@ -26,7 +26,7 @@ export const ThemePicker: FC = () => {
           />
         </ToggleButton>
         <Typography sx={{ margin: 1 }}>{key}</Typography>
-      </Grid>,
+      </Grid>
     )
   }
   return (

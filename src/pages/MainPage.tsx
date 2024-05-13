@@ -19,7 +19,7 @@ export const MainPage: FC = () => {
               borderColor: theme.palette.background.paper,
               m: 2,
               width: 300,
-              height: 300,
+              height: 300
             }}
           />
         </Link>
@@ -31,7 +31,7 @@ export const MainPage: FC = () => {
               borderColor: theme.palette.background.paper,
               m: 2,
               width: 300,
-              height: 300,
+              height: 300
             }}
           />
         </Link>
