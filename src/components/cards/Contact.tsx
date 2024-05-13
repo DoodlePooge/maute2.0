@@ -6,7 +6,7 @@ import {
   Link,
   Slide,
   Snackbar,
-  Typography
+  Typography,
 } from "@mui/material"
 import { FC, useState } from "react"
 import EmailIcon from "@mui/icons-material/Email"

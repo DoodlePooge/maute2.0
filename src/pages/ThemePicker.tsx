@@ -30,9 +30,11 @@ export const ThemePicker: FC = () => {
     )
   }
   return (
-    <Box>
-      <Typography variant="h1">Pick a Theme!</Typography>
-      <Grid container spacing={3}>
+    <Box justifyContent="center" marginTop={1}>
+      <Typography variant="h1" fontWeight={700} marginBottom={2}>
+        Pick a Theme!
+      </Typography>
+      <Grid container spacing={3} justifyContent="center">
         {options}
       </Grid>
     </Box>

@@ -4,7 +4,7 @@ import {
   Link,
   Typography,
   styled,
-  useTheme
+  useTheme,
 } from "@mui/material"
 import { Outlet } from "react-router-dom"
 import { Blob } from "../images/Blob"
@@ -13,7 +13,7 @@ const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   height: "100vh",
   width: "100vw",
-  position: "fixed"
+  position: "fixed",
 }))
 
 export const MainLayout = () => {
@@ -26,9 +26,10 @@ export const MainLayout = () => {
           fontWeight={900}
           color={theme.palette.text.secondary}
           sx={{
-            marginLeft: 3,
-            marginTop: 2,
-            position: "absolute"
+            marginLeft: "3vw",
+            marginTop: "2vh",
+            position: "absolute",
+            maxWidth: "90vw",
           }}
         >
           MAUTE.US
@@ -39,7 +40,7 @@ export const MainLayout = () => {
           position: "absolute",
           top: -750,
           left: -650,
-          zIndex: -1
+          zIndex: -1,
         }}
       >
         <Blob fill={theme.palette.background.default} />
@@ -49,7 +50,7 @@ export const MainLayout = () => {
           zIndex: -1,
           position: "absolute",
           top: "60vh",
-          float: "right"
+          float: "right",
         }}
       >
         <Blob fill={theme.palette.background.default} />
@@ -62,10 +63,10 @@ export const MainLayout = () => {
             maxHeight: "90vh",
             zIndex: 2,
             width: "85vw",
-            marginTop: 11,
+            marginTop: "10vh",
             paddingBottom: 10,
             "::-webkit-scrollbar": { display: "none" },
-            scrollbarWidth: "none"
+            scrollbarWidth: "none",
           }}
         >
           <Outlet />

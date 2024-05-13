@@ -10,7 +10,7 @@ export const Thumbnail = (props: {
       sx={{
         backgroundColor: props.paper,
         border: 1,
-        borderColor: props.paper
+        borderColor: props.paper,
       }}
     >
       <svg
