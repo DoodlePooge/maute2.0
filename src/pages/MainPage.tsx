@@ -36,7 +36,7 @@ export const MainPage: FC = () => {
           />
         </Link>
       </Stack>
-      <Typography variant="h1" sx={{ textAlign: "center" }}>
+      <Typography variant="h1" fontWeight={400} sx={{ textAlign: "center" }}>
         Site is currently being worked on, come back later.
       </Typography>
     </Box>
