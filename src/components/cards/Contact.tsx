@@ -34,7 +34,7 @@ export const Contact: FC<props> = (props) => {
   const [message, setMessage] = useState("")
   const handleClose = (
     event: React.SyntheticEvent | Event,
-    reason?: string,
+    reason?: string
   ) => {
     if (event && reason === "clickaway") {
       return

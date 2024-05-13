@@ -17,7 +17,7 @@ spellcheck:
 
 # Keeps the files literally "prettier" by formatting them consistently
 prettier:
-	npx prettier . --write --no-semi
+	npx prettier . --write --no-semi --trailing-comma es5
 
 # Builds the project in production format
 build:

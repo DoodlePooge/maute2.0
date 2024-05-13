@@ -25,7 +25,12 @@ export const MainLayout = () => {
           variant="h2"
           fontWeight={900}
           color={theme.palette.text.secondary}
-          sx={{ marginLeft: 3, marginTop: 2, position: "absolute" }}
+          sx={{
+            marginLeft: "3vw",
+            marginTop: "2vh",
+            position: "absolute",
+            maxWidth: "90vw",
+          }}
         >
           MAUTE.US
         </Typography>
@@ -58,8 +63,10 @@ export const MainLayout = () => {
             maxHeight: "90vh",
             zIndex: 2,
             width: "85vw",
-            marginTop: 11,
+            marginTop: "10vh",
+            paddingBottom: 10,
             "::-webkit-scrollbar": { display: "none" },
+            scrollbarWidth: "none",
           }}
         >
           <Outlet />
