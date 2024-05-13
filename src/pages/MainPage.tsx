@@ -7,7 +7,10 @@ export const MainPage: FC = () => {
   const theme = useTheme()
   return (
     <Box>
-      <Stack direction="row" sx={{ justifyContent: "center" }}>
+      <Stack
+        direction={{ xs: "column", sm: "row" }}
+        sx={{ justifyContent: "center", alignItems: "center" }}
+      >
         <Link href="/paige">
           <Avatar
             src={paige}
@@ -33,7 +36,7 @@ export const MainPage: FC = () => {
           />
         </Link>
       </Stack>
-      <Typography variant="h1" sx={{ textAlign: "center" }}>
+      <Typography variant="h1" fontWeight={400} sx={{ textAlign: "center" }}>
         Site is currently being worked on, come back later.
       </Typography>
     </Box>

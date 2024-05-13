@@ -71,7 +71,8 @@
       "header": "Education",
       "contents": [
         {
-          "subheader": "Computer Science (B.S)\nMinor in Mathematics",
+          "subheader": "Computer Science (B.S)",
+          "subheader2": "Minor in Mathematics",
           "bold": "East Stroudsburg University",
           "tiny": "MAY 2023"
         }
