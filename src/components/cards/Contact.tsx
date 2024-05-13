@@ -17,8 +17,8 @@ import PhoneIcon from "@mui/icons-material/Phone"
 import PublicIcon from "@mui/icons-material/Public"
 
 type info = {
-  email: string
-  phone: string
+  email?: string
+  phone?: string
   location?: string
   github?: { label: string; link: string }
   links?: { label: string; link: string }[]
@@ -50,7 +50,7 @@ export const Contact: FC<props> = (props) => {
     }
     setMessage("Email Copied!")
     setOpen(true)
-    copy(info.email)
+    copy(info.email || "")
   }
   const copyPhone = () => {
     if (open) {
@@ -58,7 +58,7 @@ export const Contact: FC<props> = (props) => {
     }
     setMessage("Phone Number Copied!")
     setOpen(true)
-    copy(info.phone)
+    copy(info.phone || "")
   }
   return (
     <>
@@ -72,20 +72,26 @@ export const Contact: FC<props> = (props) => {
           <Typography variant="h5" sx={{ fontWeight: 800 }}>
             Contact Information
           </Typography>
-          <Typography sx={{ display: "flex", alignItems: "center" }}>
+          
+          <Box hidden={!info.email}>
+          <Typography
+            sx={{ display: "flex", alignItems: "center" }}
+          >
             <IconButton color="primary" onClick={copyEmail}>
               <EmailIcon />
             </IconButton>
             {info.email}
-          </Typography>
-          <Typography sx={{ display: "flex", alignItems: "center" }}>
-            <IconButton color="primary" onClick={copyPhone}>
-              <PhoneIcon />
-            </IconButton>
-            {info.phone}
-          </Typography>
+          </Typography></Box>
+          <Box hidden={!info.phone}>
+            <Typography sx={{ display: "flex", alignItems: "center" }}>
+              <IconButton color="primary" onClick={copyPhone}>
+                <PhoneIcon />
+              </IconButton>
+              {info.phone}
+            </Typography>
+          </Box>
+          <Box hidden={!info.location}>
           <Typography
-            hidden={!info.location}
             sx={{ display: "flex", alignItems: "center" }}
           >
             <Link href={maps}>
@@ -94,9 +100,10 @@ export const Contact: FC<props> = (props) => {
               </IconButton>
             </Link>
             {info.location}
-          </Typography>
+          </Typography></Box>
+          
+          <Box hidden={!info.github}>
           <Typography
-            hidden={!info.github}
             sx={{ display: "flex", alignItems: "center" }}
           >
             <Link href={info.github?.link}>
@@ -105,7 +112,7 @@ export const Contact: FC<props> = (props) => {
               </IconButton>
             </Link>
             {info.github?.label}
-          </Typography>
+          </Typography></Box>
           {info.links?.map((site) => (
             <Typography sx={{ display: "flex", alignItems: "center" }}>
               <Link href={site.link}>
