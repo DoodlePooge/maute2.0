@@ -1,19 +1,19 @@
-import { Avatar, Box, Link, Stack, Typography, useTheme } from "@mui/material"
+import { Avatar, Box, Grid, useTheme } from "@mui/material"
 import { FC } from "react"
-import paige from "../assets/paige.webp"
-import bryan from "../assets/bryan.webp"
+import paigeImg from "../assets/paige.webp"
+import bryanImg from "../assets/bryan.webp"
+import paigeCard from "../content/paige/summary.json"
+import bryanCard from "../content/bryan/summary.json"
+import { Summary } from "../components/cards/Summary"
 
 export const MainPage: FC = () => {
   const theme = useTheme()
   return (
     <Box>
-      <Stack
-        direction={{ xs: "column", sm: "row" }}
-        sx={{ justifyContent: "center", alignItems: "center" }}
-      >
-        <Link href="/paige">
+      <Grid container justifyContent="center" alignItems="flex-end">
+        <Grid item xs={12} sm={6} md={4}>
           <Avatar
-            src={paige}
+            src={paigeImg}
             sx={{
               border: 10,
               borderColor: theme.palette.background.paper,
@@ -22,10 +22,13 @@ export const MainPage: FC = () => {
               height: 300,
             }}
           />
-        </Link>
-        <Link href="/bryan">
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Summary info={paigeCard} />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
           <Avatar
-            src={bryan}
+            src={bryanImg}
             sx={{
               border: 10,
               borderColor: theme.palette.background.paper,
@@ -34,11 +37,11 @@ export const MainPage: FC = () => {
               height: 300,
             }}
           />
-        </Link>
-      </Stack>
-      <Typography variant="h1" fontWeight={400} sx={{ textAlign: "center" }}>
-        Site is currently being worked on, come back later.
-      </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Summary info={bryanCard} />
+        </Grid>
+      </Grid>
     </Box>
   )
 }

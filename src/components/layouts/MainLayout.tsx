@@ -26,8 +26,8 @@ export const MainLayout = () => {
           fontWeight={900}
           color={theme.palette.text.secondary}
           sx={{
-            marginLeft: "3vw",
-            marginTop: "2vh",
+            ml: "3vw",
+            mt: "2vh",
             position: "absolute",
             maxWidth: "90vw",
           }}
@@ -63,7 +63,7 @@ export const MainLayout = () => {
             maxHeight: "90vh",
             zIndex: 2,
             width: "85vw",
-            marginTop: "10vh",
+            mt: "10vh",
             paddingBottom: 10,
             "::-webkit-scrollbar": { display: "none" },
             scrollbarWidth: "none",

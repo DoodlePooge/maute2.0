@@ -1,7 +1,7 @@
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
 import { FC, useContext } from "react"
 import bryan from "../assets/bryan.webp"
-import bContent from "../content/bryan.json"
+import bContent from "../content//bryan/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"
@@ -42,12 +42,12 @@ export const Bryan: FC = () => {
         <Grid item xs={12} md={4}>
           <Contact info={bContent.contact}></Contact>
           {bContent.secondary.map((card) => (
-            <Resume info={card} primary={false} />
+            <Resume key={card.header} info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
           {bContent.primary.map((card) => (
-            <Resume info={card} primary={true} />
+            <Resume key={card.header} info={card} primary={true} />
           ))}
         </Grid>
       </Grid>

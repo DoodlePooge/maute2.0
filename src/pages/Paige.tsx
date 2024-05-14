@@ -1,7 +1,7 @@
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
 import { FC, useContext } from "react"
 import paige from "../assets/paige.webp"
-import pContent from "../content/paige.json"
+import pContent from "../content//paige/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"

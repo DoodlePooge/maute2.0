@@ -25,13 +25,13 @@ export const ThemePicker: FC = () => {
             paper={theme.palette.background.paper}
           />
         </ToggleButton>
-        <Typography sx={{ margin: 1 }}>{key}</Typography>
+        <Typography sx={{ m: 1 }}>{key}</Typography>
       </Grid>
     )
   }
   return (
-    <Box justifyContent="center" marginTop={1}>
-      <Typography variant="h1" fontWeight={700} marginBottom={2}>
+    <Box justifyContent="center" mt={1}>
+      <Typography variant="h1" fontWeight={700} mb={2}>
         Pick a Theme!
       </Typography>
       <Grid container spacing={3} justifyContent="center">
