@@ -1,37 +1,119 @@
 {
   "contact": {
-    "email": "test@gmail.com",
-    "phone": "(555) 555-5555",
-    "location": "Washington DC",
-    "github": { "label": "Example", "link": "https://maute.us" },
-    "links": [{ "label": "Maute.US", "link": "https://maute.us" }]
+    "email": "bryan@maute.us",
+    "location": "East Stroudsburg PA",
+    "links": [
+      {
+        "label": "Behance Portfolio",
+        "link": "https://www.behance.net/bryanmaute1d32"
+      }
+    ]
   },
   "primary": [
     {
-      "header": "Primary Example1",
+      "header": "Work Experience",
       "contents": [
         {
-          "subheader": "Subheader1",
-          "bold": "BoldText",
-          "tiny": "Tiny Text",
-          "bullets": ["This is one thing", "this is another thing"]
+          "subheader": "Event Brand Representative",
+          "bold": "Renewal by Andersen",
+          "tiny": "JULY 2023-FEBRUARY 2024",
+          "bullets": [
+            "Initiate conversations with homeowners to inquire questions on  the conditions of windows and patio doors",
+            "Schedule consultation appointments",
+            "Give out reading materials and business cards for interested personnel"
+          ]
+        },
+
+        {
+          "subheader": "Intern",
+          "bold": "The Pocono Chamber of Commerce",
+          "tiny": "MAY 2022-AUGUST 2022",
+          "bullets": [
+            "Edited footage in post production",
+            "Produced and published video, photo, and graphic content to The Pocono Chamber’s social media pages",
+            "Attended Pocono Chamber events taking pictures and videos",
+            "Interviewed business owners about their experience as a member of The Pocono Chamber"
+          ]
+        },
+
+        {
+          "subheader": "Sales Associate",
+          "bold": "Escape The Mystery Room",
+          "tiny": "AUGUST 2018-NOVEMBER 2018",
+          "bullets": [
+            "Managed phone and reservation system",
+            "Staged mystery room and led groups up to 12 people in an interactive experience",
+            "Trained new employees"
+          ]
         }
       ]
     },
     {
-      "header": "Primary Example2",
-      "contents": [{ "subheader": "Subheader2", "bullets": ["Hai"] }]
+      "header": "Co-Curriculars",
+      "contents": [
+        {
+          "subheader": "Studio Crew",
+          "bold": "East Stroudsburg University Media Production Club",
+          "bullets": [
+            "Studio camera operator",
+            "Proficient with camera equipment",
+            "Designed studio sets",
+            "Wrote, directed, and produced various media projects",
+            "Acted in multiple productions"
+          ]
+        }
+      ]
     }
   ],
   "secondary": [
     {
-      "header": "Secondary Example",
+      "header": "Education",
       "contents": [
         {
-          "subheader": "Subheader",
-          "bold": "Bold Text",
-          "tiny": "Tiny Text",
-          "items": ["item1", "item2"]
+          "subheader": "Digital Media Technologies (B.S.)",
+          "subheader2": "Concentration in Interactive and Social Media",
+          "bold": "East Stroudsburg University",
+          "tiny": "DECEMBER 2022"
+        },
+
+        {
+          "subheader": "Digital Media Technologies (AAS)",
+          "bold": "County College of Morris",
+          "tiny": "MAY 2020"
+        }
+      ]
+    },
+    {
+      "header": "Relevant Courses",
+      "contents": [
+        {
+          "items": [
+            "Studio Production",
+            "Social Media Management",
+            "Game Design"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "contents": [
+        {
+          "subheader": "Office Tools",
+          "items": [
+            "Adobe Premiere",
+            "Final Cut Pro",
+            "Adobe Photoshop",
+            "Open Broadcasting Software"
+          ]
+        },
+        {
+          "subheader": "Web Design",
+          "items": ["Adobe Dreamweaver", "HTML5", "CSS3"]
+        },
+        {
+          "subheader": "Social Media",
+          "items": ["YouTube", "Instagram", "Twitter/X"]
         }
       ]
     }

@@ -2,7 +2,7 @@ import { Box, Card, List, Typography } from "@mui/material"
 import { FC } from "react"
 
 type content = {
-  subheader: string
+  subheader?: string
   subheader2?: string
   bold?: string
   tiny?: string
@@ -50,7 +50,11 @@ export const Resume: FC<props> = (props) => {
         )}
         {info.contents.map((field) => (
           <Box marginBottom={3}>
-            <Typography variant="h6" fontWeight={600}>
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              hidden={!field.subheader}
+            >
               {field.subheader}
             </Typography>
             <Typography
