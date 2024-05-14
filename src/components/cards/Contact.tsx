@@ -72,16 +72,15 @@ export const Contact: FC<props> = (props) => {
           <Typography variant="h5" sx={{ fontWeight: 800 }}>
             Contact Information
           </Typography>
-          
+
           <Box hidden={!info.email}>
-          <Typography
-            sx={{ display: "flex", alignItems: "center" }}
-          >
-            <IconButton color="primary" onClick={copyEmail}>
-              <EmailIcon />
-            </IconButton>
-            {info.email}
-          </Typography></Box>
+            <Typography sx={{ display: "flex", alignItems: "center" }}>
+              <IconButton color="primary" onClick={copyEmail}>
+                <EmailIcon />
+              </IconButton>
+              {info.email}
+            </Typography>
+          </Box>
           <Box hidden={!info.phone}>
             <Typography sx={{ display: "flex", alignItems: "center" }}>
               <IconButton color="primary" onClick={copyPhone}>
@@ -91,28 +90,26 @@ export const Contact: FC<props> = (props) => {
             </Typography>
           </Box>
           <Box hidden={!info.location}>
-          <Typography
-            sx={{ display: "flex", alignItems: "center" }}
-          >
-            <Link href={maps}>
-              <IconButton color="primary">
-                <PlaceIcon />
-              </IconButton>
-            </Link>
-            {info.location}
-          </Typography></Box>
-          
+            <Typography sx={{ display: "flex", alignItems: "center" }}>
+              <Link href={maps}>
+                <IconButton color="primary">
+                  <PlaceIcon />
+                </IconButton>
+              </Link>
+              {info.location}
+            </Typography>
+          </Box>
+
           <Box hidden={!info.github}>
-          <Typography
-            sx={{ display: "flex", alignItems: "center" }}
-          >
-            <Link href={info.github?.link}>
-              <IconButton color="primary">
-                <GitHubIcon />
-              </IconButton>
-            </Link>
-            {info.github?.label}
-          </Typography></Box>
+            <Typography sx={{ display: "flex", alignItems: "center" }}>
+              <Link href={info.github?.link}>
+                <IconButton color="primary">
+                  <GitHubIcon />
+                </IconButton>
+              </Link>
+              {info.github?.label}
+            </Typography>
+          </Box>
           {info.links?.map((site) => (
             <Typography sx={{ display: "flex", alignItems: "center" }}>
               <Link href={site.link}>

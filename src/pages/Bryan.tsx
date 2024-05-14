@@ -1,6 +1,6 @@
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
 import { FC, useContext } from "react"
-import bryan from "../assets/bryan.jpg"
+import bryan from "../assets/bryan.webp"
 import bContent from "../content/bryan.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
@@ -34,7 +34,7 @@ export const Bryan: FC = () => {
             Bryan
           </Typography>
           <Typography variant="h2" fontWeight={500} color="primary">
-            Social Media Person :)
+            Digital Media Freelancer
           </Typography>
         </Box>
       </Stack>

@@ -1,7 +1,7 @@
 import { Avatar, Box, Link, Stack, Typography, useTheme } from "@mui/material"
 import { FC } from "react"
 import paige from "../assets/paige.webp"
-import bryan from "../assets/bryan.jpg"
+import bryan from "../assets/bryan.webp"
 
 export const MainPage: FC = () => {
   const theme = useTheme()
