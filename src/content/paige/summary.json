@@ -1,0 +1,9 @@
+{
+  "name": "Paige",
+  "title": "Junior Software Engineer",
+  "description": "",
+  "buttons": [
+    { "tag": "About Me", "route": "/paige" },
+    { "tag": "Portfolio", "route": "/paige/portfolio" }
+  ]
+}

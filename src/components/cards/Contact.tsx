@@ -67,60 +67,58 @@ export const Contact: FC<props> = (props) => {
           <Alert severity="success">{message}</Alert>
         </Snackbar>
       </Slide>
-      <Card sx={{ m: 1, mb: 2 }}>
-        <Box sx={{ m: 3 }}>
-          <Typography variant="h5" sx={{ fontWeight: 800 }}>
-            Contact Information
+      <Card sx={{ m: 1, mb: 2, p: 2 }}>
+        <Typography variant="h5" sx={{ fontWeight: 800 }}>
+          Contact Information
+        </Typography>
+
+        <Box hidden={!info.email}>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            <IconButton color="primary" onClick={copyEmail}>
+              <EmailIcon />
+            </IconButton>
+            {info.email}
           </Typography>
-
-          <Box hidden={!info.email}>
-            <Typography sx={{ display: "flex", alignItems: "center" }}>
-              <IconButton color="primary" onClick={copyEmail}>
-                <EmailIcon />
-              </IconButton>
-              {info.email}
-            </Typography>
-          </Box>
-          <Box hidden={!info.phone}>
-            <Typography sx={{ display: "flex", alignItems: "center" }}>
-              <IconButton color="primary" onClick={copyPhone}>
-                <PhoneIcon />
-              </IconButton>
-              {info.phone}
-            </Typography>
-          </Box>
-          <Box hidden={!info.location}>
-            <Typography sx={{ display: "flex", alignItems: "center" }}>
-              <Link href={maps}>
-                <IconButton color="primary">
-                  <PlaceIcon />
-                </IconButton>
-              </Link>
-              {info.location}
-            </Typography>
-          </Box>
-
-          <Box hidden={!info.github}>
-            <Typography sx={{ display: "flex", alignItems: "center" }}>
-              <Link href={info.github?.link}>
-                <IconButton color="primary">
-                  <GitHubIcon />
-                </IconButton>
-              </Link>
-              {info.github?.label}
-            </Typography>
-          </Box>
-          {info.links?.map((site) => (
-            <Typography sx={{ display: "flex", alignItems: "center" }}>
-              <Link href={site.link}>
-                <IconButton color="primary">
-                  <PublicIcon />
-                </IconButton>
-              </Link>
-              {site.label}
-            </Typography>
-          ))}
         </Box>
+        <Box hidden={!info.phone}>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            <IconButton color="primary" onClick={copyPhone}>
+              <PhoneIcon />
+            </IconButton>
+            {info.phone}
+          </Typography>
+        </Box>
+        <Box hidden={!info.location}>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            <Link href={maps}>
+              <IconButton color="primary">
+                <PlaceIcon />
+              </IconButton>
+            </Link>
+            {info.location}
+          </Typography>
+        </Box>
+
+        <Box hidden={!info.github}>
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            <Link href={info.github?.link}>
+              <IconButton color="primary">
+                <GitHubIcon />
+              </IconButton>
+            </Link>
+            {info.github?.label}
+          </Typography>
+        </Box>
+        {info.links?.map((site) => (
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            <Link href={site.link}>
+              <IconButton color="primary">
+                <PublicIcon />
+              </IconButton>
+            </Link>
+            {site.label}
+          </Typography>
+        ))}
       </Card>
     </>
   )

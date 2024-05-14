@@ -10,6 +10,8 @@ import { ThemePicker } from "./pages/ThemePicker"
 import { ThemeContext } from "./context"
 import { useState } from "react"
 import { themeDict } from "./themes"
+import { Portfolio } from "./pages/Portfolio"
+import paigePort from "./content/paige/portfolio.json"
 
 function App() {
   // const { theme, setTheme } = useContext(ThemeContext)
@@ -31,8 +33,19 @@ function App() {
           <Routes>
             <Route path="/" element={<MainLayout />}>
               <Route index element={<MainPage />} />
+              {/* Paige */}
               <Route path="paige" element={<Paige />} />
-              <Route path="theme-picker" element={<ThemePicker />} />
+              <Route
+                path="paige/portfolio"
+                element={
+                  <Portfolio name="Paige" sections={paigePort.sections} />
+                }
+              />
+              <Route
+                path="paige/portfolio/theme-picker"
+                element={<ThemePicker />}
+              />
+              {/* Bryan */}
               <Route path="bryan" element={<Bryan />} />
               <Route path="*" element={<NoPage />} />
             </Route>

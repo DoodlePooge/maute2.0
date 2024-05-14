@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "header": "Site Tool Examples",
+      "description": "A variety of components and tools hosted directly on this site. Some are for fun, and others are some common web app functionalities.",
+      "contents": [
+        {
+          "subheader": "Theme Settings",
+          "description": "A simple web page that allows users to choose a pre-made theme. The chosen theme is overwritten for specific pages.",
+          "tiny": "MAY 2024",
+          "buttons": [{ "tag": "Theme Picker", "route": "/theme-picker" }]
+        }
+      ]
+    }
+  ]
+}
