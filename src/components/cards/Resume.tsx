@@ -50,11 +50,7 @@ export const Resume: FC<props> = (props) => {
         )}
         {info.contents.map((field) => (
           <Box marginBottom={3}>
-            <Typography
-              variant="h6"
-              fontWeight={600}
-              hidden={!field.subheader}
-            >
+            <Typography variant="h6" fontWeight={600} hidden={!field.subheader}>
               {field.subheader}
             </Typography>
             <Typography
