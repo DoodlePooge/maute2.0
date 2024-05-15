@@ -21,7 +21,7 @@ export const SuccessNotif: FC<props> = (props) => {
   }
   return (
     <Slide in={open} direction="up">
-      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
         <Alert severity="success">{message}</Alert>
       </Snackbar>
     </Slide>

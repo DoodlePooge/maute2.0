@@ -48,21 +48,36 @@ export const MainLayout = () => {
         </Typography>
       </Link>
       <Box
+        aria-hidden
         sx={{
           position: "absolute",
-          top: -750,
-          left: -650,
+          "@media (min-width: 400px)": { top: -750, left: -650 },
+          "@media (max-width: 400px)": {
+            top: -700,
+            left: -1700,
+          },
           zIndex: -1,
         }}
       >
         <Blob fill={theme.palette.background.default} />
       </Box>
       <Box
+        aria-hidden
         sx={{
           zIndex: -1,
-          position: "absolute",
-          top: "60vh",
-          float: "right",
+          "@media (min-width: 400px)": {
+            top: "60vh",
+            float: "right",
+            position: "absolute",
+            "@media (min-width: 2000px)": {
+              position: "fixed",
+              right: -400,
+            },
+          },
+          "@media (max-width: 400px)": {
+            top: -100,
+            position: "absolute",
+          },
         }}
       >
         <Blob fill={theme.palette.background.default} />
@@ -71,9 +86,8 @@ export const MainLayout = () => {
         <Box
           sx={{
             mask: "linear-gradient(to top, rgba(0,0,0, 1) 0, rgba(0,0,0, 1) 97%, rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 20%);",
-            // overflow: "auto",
+            overflow: "auto",
             maxHeight: "90vh",
-            // zIndex: 2,
             position: "relative",
             width: "85vw",
             mt: "10vh",
