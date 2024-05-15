@@ -5,10 +5,13 @@ import bContent from "../content//bryan/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"
+import { useOutletContext } from "react-router-dom"
+import { outletContext } from "../components/layouts/MainLayout"
 
 export const Bryan: FC = () => {
   const { setTheme } = useContext(ThemeContext)
   setTheme("Red", false)
+  const alertProps: outletContext = useOutletContext()
 
   const theme = useTheme()
   return (
@@ -40,7 +43,12 @@ export const Bryan: FC = () => {
       </Stack>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <Contact info={bContent.contact}></Contact>
+          <Contact
+            info={bContent.contact}
+            open={alertProps.open}
+            setOpen={alertProps.setOpen}
+            setMessage={alertProps.setMessage}
+          ></Contact>
           {bContent.secondary.map((card) => (
             <Resume key={card.header} info={card} primary={false} />
           ))}

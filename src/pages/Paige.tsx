@@ -5,10 +5,13 @@ import pContent from "../content//paige/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "../context"
+import { useOutletContext } from "react-router-dom"
+import { outletContext } from "../components/layouts/MainLayout"
 
 export const Paige: FC = () => {
   const { setTheme } = useContext(ThemeContext)
   setTheme("Purple", false)
+  const alertProps: outletContext = useOutletContext()
 
   const theme = useTheme()
   return (
@@ -40,7 +43,12 @@ export const Paige: FC = () => {
       </Stack>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <Contact info={pContent.contact}></Contact>
+          <Contact
+            info={pContent.contact}
+            open={alertProps.open}
+            setOpen={alertProps.setOpen}
+            setMessage={alertProps.setMessage}
+          ></Contact>
           {pContent.secondary.map((card) => (
             <Resume info={card} primary={false} />
           ))}

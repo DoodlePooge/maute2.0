@@ -8,6 +8,8 @@ Curriculars
 Darkmoon
 Dreamweaver
 maute
+Notif
+notifs
 Photoshop
 Pooge
 Stroudsburg
