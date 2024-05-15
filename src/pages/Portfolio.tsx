@@ -30,7 +30,7 @@ export const Portfolio: FC<props> = (props) => {
       <Typography variant="h5" my={2}>
         This is a one stop shop to explore a variety of {name}'s creations.
       </Typography>
-      <Grid container spacing={3}>
+      <Grid container gridAutoRows="row" spacing={3}>
         {sections.map((section) => (
           <Grid item sm={12} lg={6}>
             <Card sx={{ my: 1, mb: 2, p: 2 }}>

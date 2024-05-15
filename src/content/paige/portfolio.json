@@ -11,6 +11,26 @@
           "buttons": [{ "tag": "Theme Picker", "route": "/theme-picker" }]
         }
       ]
+    },
+    {
+      "header": "Tangible Projects",
+      "description": "Hobby driven projects that akldfj;aslkdfj;adfj.",
+      "contents": [
+        {
+          "subheader": "Arduino Portal Gun",
+          "description": "A prop inspired by Valve's Aperture Science Portal Gun. Powered by an arduino using LEDs, a speaker, and a few switches.",
+          "tiny": "2023",
+          "buttons": [{ "tag": "Portal Gun", "route": "/portal-gun" }]
+        },
+        {
+          "subheader": "Modded GameCube Controller Design",
+          "description": "Using krita to mock some designs, I was able to bring imagination to life.",
+          "tiny": "2023",
+          "buttons": [
+            { "tag": "Controller Design", "route": "/controller-design" }
+          ]
+        }
+      ]
     }
   ]
 }
