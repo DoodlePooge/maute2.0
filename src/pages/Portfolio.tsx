@@ -35,7 +35,7 @@ export const Portfolio: FC<props> = (props) => {
 
   return (
     <Box>
-      <Typography variant="h1" fontWeight={700} my={2}>
+      <Typography variant="h1" fontWeight={700} mb={2}>
         {name}'s Portfolio
       </Typography>
       <Typography variant="h5" my={2}>

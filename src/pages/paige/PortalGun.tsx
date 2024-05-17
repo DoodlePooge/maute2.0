@@ -6,7 +6,7 @@ import { YoutubeEmbed } from "../../components/images/YouTubeEmbed"
 export const PortalGun: FC = () => {
   //   const theme = useTheme()
   return (
-    <Box justifyContent="center" mt={1}>
+    <Box justifyContent="center">
       <Typography variant="h1" fontWeight={700} mb={2}>
         Aperture Portal Gun Prop
       </Typography>

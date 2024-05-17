@@ -7,7 +7,7 @@ import finalController from "../../assets/paige/controllers/finalController.jpg"
 export const ControllerDesign: FC = () => {
   //   const theme = useTheme()
   return (
-    <Box justifyContent="center" mt={1}>
+    <Box justifyContent="center">
       <Typography variant="h1" fontWeight={700} mb={2}>
         Designing a GameCube Controller
       </Typography>

@@ -10,6 +10,7 @@ import { Outlet } from "react-router-dom"
 import { Blob } from "../images/Blob"
 import { Dispatch, useState } from "react"
 import { SuccessNotif } from "../notifs/SuccessNotif"
+import { MauteCrumbs } from "../navigation/MauteCrumbs"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -96,6 +97,7 @@ export const MainLayout = () => {
             scrollbarWidth: "none",
           }}
         >
+          <MauteCrumbs path={window.location.pathname} />
           <Outlet context={alertContext} />
         </Box>
       </Container>

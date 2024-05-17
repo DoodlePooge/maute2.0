@@ -30,7 +30,7 @@ export const ThemePicker: FC = () => {
     )
   }
   return (
-    <Box justifyContent="center" mt={1}>
+    <Box justifyContent="center">
       <Typography variant="h1" fontWeight={700} mb={2}>
         Pick a Theme!
       </Typography>
