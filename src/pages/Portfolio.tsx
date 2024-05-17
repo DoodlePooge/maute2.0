@@ -1,5 +1,6 @@
-import { Box, Button, Card, Grid, Link, Typography } from "@mui/material"
+import { Box, Grid, Typography } from "@mui/material"
 import { FC } from "react"
+import { PortCard } from "../components/cards/PortCard"
 
 type content = {
   subheader?: string
@@ -22,6 +23,16 @@ interface props {
 export const Portfolio: FC<props> = (props) => {
   // const theme = useTheme()
   const { name, sections } = props
+  let section1, section2
+  if (sections.length > 1) {
+    const marker =
+      sections.length % 2 ? sections.length / 2 + 1 : sections.length / 2
+    section1 = sections.slice(0, marker)
+    section2 = sections.slice(marker)
+  } else {
+    section1 = sections
+  }
+
   return (
     <Box>
       <Typography variant="h1" fontWeight={700} my={2}>
@@ -31,57 +42,14 @@ export const Portfolio: FC<props> = (props) => {
         This is a one stop shop to explore a variety of {name}'s creations.
       </Typography>
       <Grid container gridAutoRows="row" spacing={3}>
-        {sections.map((section) => (
-          <Grid item sm={12} lg={6}>
-            <Card sx={{ my: 1, mb: 2, p: 2 }}>
-              <Typography
-                variant="h3"
-                color="primary"
-                sx={{
-                  borderBottom: 3,
-                  fontWeight: 700,
-                  mb: 1,
-                }}
-              >
-                {section.header}
-              </Typography>
-              <Typography hidden={!section.description}>
-                {section.description}
-              </Typography>
-              {section.contents.map((content) => (
-                <Box my={2}>
-                  <Typography
-                    variant="h5"
-                    hidden={!content.subheader}
-                    fontWeight={700}
-                  >
-                    {content.subheader}
-                  </Typography>
-                  <Typography hidden={!content.tiny} variant="caption">
-                    {content.tiny}
-                  </Typography>
-                  <Typography hidden={!content.description} my={2} pl={5}>
-                    {content.description}
-                  </Typography>
-                  <Box
-                    hidden={!content.buttons}
-                    sx={{
-                      m: 1,
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                    {content.buttons?.map((button) => (
-                      <Link href={"/paige/portfolio" + button.route}>
-                        <Button variant="contained">{button.tag}</Button>
-                      </Link>
-                    ))}
-                  </Box>
-                </Box>
-              ))}
-            </Card>
-          </Grid>
-        ))}
+        <Grid item sm={12} lg={6}>
+          {section1.map((section) => (
+            <PortCard section={section} />
+          ))}
+        </Grid>
+        <Grid hidden={!section2} item sm={12} lg={6}>
+          {section2?.map((section) => <PortCard section={section} />)}
+        </Grid>
       </Grid>
     </Box>
   )
