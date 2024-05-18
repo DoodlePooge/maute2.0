@@ -9,10 +9,12 @@ Darkmoon
 Dreamweaver
 krita
 maute
+microcontroller
 Notif
 notifs
 Photoshop
 Pooge
 Stroudsburg
 vercel
+voicelines
 webp

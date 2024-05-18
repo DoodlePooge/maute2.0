@@ -52,6 +52,18 @@
       "header": "Projects",
       "contents": [
         {
+          "subheader": "Creator",
+          "bold": "Maute.us",
+          "tiny": "APR 2024 - PRESENT",
+          "bullets": [
+            "Built the site using React+Vite in Typescript",
+            "Styled with Material UI",
+            "Utilized JSON for the content for easy editing non-developers",
+            "Designed the UI and its themes",
+            "Brainstormed ideas to test my abilities and showcase on the site in a portfolio format"
+          ]
+        },
+        {
           "subheader": "Project Lead",
           "bold": "Darkmoon",
           "tiny": "JUL 2022-AUG 2022, JUL 2023-AUG 2023",
