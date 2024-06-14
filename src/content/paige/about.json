@@ -62,7 +62,7 @@
           "bullets": [
             "Designed the general theme and different color schemes",
             "Created the website using React+Vite and MUI",
-            "Manually drew svgs for the accent background images",
+            "Manually drew svg files for the accent background images",
             "Implemented a github action that would deploy the site to production",
             "Created a simple JSON type outside the code for non-developer readability"
           ]
