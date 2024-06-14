@@ -16,11 +16,15 @@
           "bold": "Obscurity Labs LLC",
           "tiny": "MAY 2022 - PRESENT",
           "bullets": [
-            "Managed interns for an open source project",
-            "Developed UI features for a web application",
-            "Implemented backend software tests",
+            "Lead interns to complete an open source web app that utilized FastAPI to parse ISO files into a Database",
+            "Developed features for web applications in AngularJS and React, ensuring cross-browser compatibility",
+            "Implemented endpoints for REST APIs",
+            "Maintained test coverages to 80% or more",
+            "Proactively identified and resolved issues during release reviews, resulting in stable released versions",
             "Collaborated with both large and small agile teams",
-            "Debugged frontend issues on a large scale project"
+            "Drew thumbnails for react components",
+            "Implemented a feature that resulted to be an improvement for users to organize their data",
+            "Updated user guides to reflect new features and UI changes"
           ]
         },
         {
@@ -40,8 +44,8 @@
           "tiny": "JAN 2020 - MAY 2022",
           "bullets": [
             "Created software for automated web testing in Javascript using the Selenium and mocha libraries",
-            "Used PowerShell scripting and SQL to convert all images to .webp",
-            "Refined accessibility and bug fixes for screen readers",
+            "Used PowerShell scripting and SQL to convert all images to .webp, optimizing website performance",
+            "Enhanced web accessibility for screen readers to ensure the website was ADA compliant",
             "Sent reports to various departments on their content",
             "Researched, compared, and setup digital signage"
           ]
@@ -51,6 +55,18 @@
     {
       "header": "Projects",
       "contents": [
+        {
+          "subheader": "Developer",
+          "bold": "MAUTE.us",
+          "tiny": "MAR 2024 - PRESENT",
+          "bullets": [
+            "Designed the general theme and different color schemes",
+            "Created the website using React+Vite and MUI",
+            "Manually drew svg files for the accent background images",
+            "Implemented a github action that would deploy the site to production",
+            "Created a simple JSON type outside the code for non-developer readability"
+          ]
+        },
         {
           "subheader": "Project Lead",
           "bold": "Darkmoon",
@@ -93,6 +109,15 @@
         {
           "subheader": "Frameworks",
           "items": ["FastAPI", "React", "AngularJS", "Django"]
+        },
+        {
+          "subheader": "Soft Skills",
+          "items": [
+            "Communication",
+            "Leadership",
+            "Event Planning",
+            "Project Management"
+          ]
         }
       ]
     }
