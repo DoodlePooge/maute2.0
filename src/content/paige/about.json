@@ -12,30 +12,18 @@
       "header": "Work Experience",
       "contents": [
         {
-          "subheader": "Junior Software Engineer",
+          "subheader": "Software Engineer",
           "bold": "Obscurity Labs LLC",
           "tiny": "MAY 2022 - PRESENT",
           "bullets": [
-            "Lead interns to complete an open source web app that utilized FastAPI to parse ISO files into a Database",
-            "Developed features for web applications in AngularJS and React, ensuring cross-browser compatibility",
-            "Implemented endpoints for REST APIs",
-            "Maintained test coverages to 80% or more",
-            "Proactively identified and resolved issues during release reviews, resulting in stable released versions",
-            "Collaborated with both large and small agile teams",
-            "Drew thumbnails for react components",
-            "Implemented a feature that resulted to be an improvement for users to organize their data",
-            "Updated user guides to reflect new features and UI changes"
-          ]
-        },
-        {
-          "subheader": "President",
-          "bold": "ESU Computer Science Organization",
-          "tiny": "MAY 2020 - MAY 2022",
-          "bullets": [
-            "Awarded certificate of recognition for maintaining an active club during a global pandemic",
-            "Received Student Leader award",
-            "Organized two successful charity live streams raising over $4000 for children’s hospitals",
-            "Created opportunities for members with roles, projects, and workshops"
+            "Pioneered the successful delivery of an open-source web application by mentoring interns, leveraging FastAPI to efficiently parse ISO files into a structured database.",
+            "Engineered and optimized cutting-edge features for web applications using AngularJS and React, ensuring cross-browser compatibility and an intuitive user experience.",
+            "Architected and implemented scalable endpoints for REST APIs, enhancing system interoperability and performance.",
+            "Consistently maintained and enhanced test coverage to exceed 80%, driving quality assurance and minimizing defect rates.",
+            "Proactively identified and mitigated potential issues during comprehensive release reviews, ensuring robust and stable version releases. ",
+            "Designed and created high-fidelity thumbnails for React components, improving visual clarity and user engagement. ",
+            "Innovatively developed a feature that transformed user data organization, significantly boosting user productivity and satisfaction. ",
+            "Authored and updated comprehensive user guides to reflect new features and UI enhancements, ensuring seamless user adoption and knowledge transfer."
           ]
         },
         {
@@ -43,11 +31,21 @@
           "bold": "East Stroudsburg University Academic Computing",
           "tiny": "JAN 2020 - MAY 2022",
           "bullets": [
-            "Created software for automated web testing in Javascript using the Selenium and mocha libraries",
-            "Used PowerShell scripting and SQL to convert all images to .webp, optimizing website performance",
-            "Enhanced web accessibility for screen readers to ensure the website was ADA compliant",
-            "Sent reports to various departments on their content",
-            "Researched, compared, and setup digital signage"
+            "Developed automated web testing software in JavaScript, utilizing Selenium and Mocha libraries to ensure comprehensive test coverage and reliability.",
+            "Administered PowerShell scripts and SQL queries to efficiently convert images to .webp format, significantly refined website performance and load times.",
+            "Enhanced web accessibility features, ensuring compliance with ADA standards and improving the user experience for individuals using screen readers.",
+            "Conducted thorough research and comparative analysis of digital signage solutions, successfully setting up an improved digital signage system to enhance information dissemination."
+          ]
+        },
+        {
+          "subheader": "President",
+          "bold": "ESU Computer Science Organization",
+          "tiny": "MAY 2020 - MAY 2022",
+          "bullets": [
+            "Orchestrated the club’s operations during a global pandemic, earning a certificate of recognition for maintaining an active and engaged membership.",
+            "Honored with the Student Leader Award for exemplary leadership and contribution to the university community.",
+            "Successfully organized and led two charity live streams, raising over $4000 for children’s hospitals.",
+            "Developed and facilitated member opportunities through structured roles, impactful projects, and skill-building workshops, fostering professional growth and collaboration."
           ]
         }
       ]
@@ -60,11 +58,11 @@
           "bold": "MAUTE.us",
           "tiny": "MAR 2024 - PRESENT",
           "bullets": [
-            "Designed the general theme and different color schemes",
-            "Created the website using React+Vite and MUI",
-            "Manually drew svg files for the accent background images",
-            "Implemented a github action that would deploy the site to production",
-            "Created a simple JSON type outside the code for non-developer readability"
+            "Conceptualized and designed the overarching theme and diverse color schemes, ensuring a visually appealing and cohesive user experience.",
+            "Engineered a responsive website using React+Vite and MUI, delivering a seamless and performant interface.",
+            "Hand-drew intricate SVG files for accent background images, enhancing the site's visual aesthetics.",
+            "Automated the deployment process by implementing a GitHub Action to streamline site releases to production.",
+            "Developed a user-friendly JSON schema for non-developer readability, improving accessibility and ease of use for family."
           ]
         },
         {
@@ -72,10 +70,10 @@
           "bold": "Darkmoon",
           "tiny": "JUL 2022-AUG 2022, JUL 2023-AUG 2023",
           "bullets": [
-            "Planned out the end goal, sprints, and tickets",
-            "Guided the team of interns through the environment",
-            "Ran daily meetings to make sure we were on task",
-            "Presented the work to the Commonwealth Cyber Initiative"
+            "Strategically planned project milestones, defined sprints, and managed tickets to ensure timely and efficient project delivery.",
+            "Mentored and guided a team of interns, providing comprehensive support and fostering a collaborative development environment.",
+            "Conducted daily stand-up meetings to track progress and ensure alignment with project goals and deadlines.",
+            "Delivered a professional presentation of the project’s achievements to the Commonwealth Cyber Initiative, showcasing the team's work and outcomes."
           ]
         }
       ]
