@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box, Card, Grid, Typography } from "@mui/material"
 import { FC } from "react"
 import designs from "../../assets/paige/controllers/designs.webp"
 import beachDesign from "../../assets/paige/controllers/beachDesign.jpg"
@@ -11,9 +11,23 @@ export const ControllerDesign: FC = () => {
       <Typography variant="h1" fontWeight={700} mb={2}>
         Designing a GameCube Controller
       </Typography>
-      <img src={designs} />
-      <img src={beachDesign} />
-      <img src={finalController} />
+      <Grid container>
+        <Grid item>
+          <Card sx={{ p: 2 }}>
+            <img src={designs} width="100%" />
+          </Card>
+        </Grid>
+        <Grid item md={6}>
+          <Card sx={{ p: 2 }}>
+            <img src={beachDesign} width="100%" />
+          </Card>
+        </Grid>
+        <Grid item md={6}>
+          <Card sx={{ p: 2 }}>
+            <img src={finalController} width="100%" />
+          </Card>
+        </Grid>
+      </Grid>
     </Box>
   )
 }

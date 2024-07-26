@@ -73,9 +73,17 @@ export const PortalGun: FC = () => {
               game. This required our first challenge of how we were going to
               store these files. Since the microcontroller does not have the
               storage space for multiple sound files we configured an SD card
-              module. The next issue was the figuring out the format these files
-              needed to be for the speaker to play them properly. Through some
-              resources online, we came up with the schematic.
+              module. The format of the sound files needed to be configured
+              specifically to work with the library that is made for the SD
+              module and speaker we had.
+            </Typography>
+            <Typography sx={{ textIndent: "1em", pb: 2 }}>
+              After a lot of trial and error we found that the sound files
+              needed to be WAV files with short names in all caps. The SD card
+              needed to be in FAT32 format without using the quick format
+              option. The SD module required to be plugged into certain pins
+              based on the library we were using. Once we figured out all the
+              details of each module, we came up with the schematic.
             </Typography>
           </Card>
           <YoutubeEmbed embedId="LbGg5cHe4nM" />
@@ -83,6 +91,13 @@ export const PortalGun: FC = () => {
         <Grid item xs={12} lg={6}>
           <Card sx={{ p: 1 }}>
             <img src={schematic} width={"100%"} />
+          </Card>
+        </Grid>
+        <Grid item xs={12} lg={6}>
+          <Card sx={{ p: 1 }}>
+            <Typography sx={{ textIndent: "1em", pb: 2 }}>
+              At this point we reached the end of the semester
+            </Typography>
           </Card>
         </Grid>
       </Grid>
