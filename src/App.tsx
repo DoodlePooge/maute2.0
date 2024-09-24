@@ -6,6 +6,7 @@ import { MainPage } from "./pages/MainPage"
 import { Paige } from "./pages/Paige"
 import { Bryan } from "./pages/Bryan"
 import { NoPage } from "./pages/NoPage"
+import { Snake } from "./pages/Snake"
 import { ThemePicker } from "./pages/ThemePicker"
 import { ThemeContext } from "./context"
 import { useState } from "react"
@@ -40,6 +41,10 @@ function App() {
                 element={
                   <Portfolio name="Paige" sections={paigePort.sections} />
                 }
+              />
+              <Route
+                path="paige/portfolio/snake"
+                element={<Snake />}
               />
               <Route
                 path="paige/portfolio/theme-picker"
