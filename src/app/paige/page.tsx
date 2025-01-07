@@ -1,24 +1,22 @@
+"use client"
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
-import { FC, useContext } from "react"
-import paige from "../assets/paige.webp"
-import pContent from "../content//paige/about.json"
-import { Contact } from "../components/cards/Contact"
-import { Resume } from "../components/cards/Resume"
-import { ThemeContext } from "../context"
-import { useOutletContext } from "react-router-dom"
-import { outletContext } from "../components/layouts/MainLayout"
+import { useState } from "react"
+import { Contact } from "@/app/components/cards/Contact"
+import { Resume } from "@/app/components/cards/Resume"
+import { SuccessNotif } from "@/app/components/notifs/SuccessNotif"
+import pContent from "@/app/paige/about.json"
 
-export const Paige: FC = () => {
-  const { setTheme } = useContext(ThemeContext)
-  setTheme("Purple", false)
-  const alertProps: outletContext = useOutletContext()
+export default function Page() {
+  const [open, setOpen] = useState(false)
+  const [message, setMessage] = useState("")
 
   const theme = useTheme()
   return (
     <>
+      <SuccessNotif message={message} open={open} setOpen={setOpen} />
       <Stack direction={{ xs: "column", md: "row" }} m={2}>
         <Avatar
-          src={paige}
+          src="/paige.webp"
           sx={{
             border: 10,
             borderColor: theme.palette.background.paper,
@@ -45,17 +43,17 @@ export const Paige: FC = () => {
         <Grid item xs={12} md={4}>
           <Contact
             info={pContent.contact}
-            open={alertProps.open}
-            setOpen={alertProps.setOpen}
-            setMessage={alertProps.setMessage}
+            open={open}
+            setOpen={setOpen}
+            setMessage={setMessage}
           ></Contact>
           {pContent.secondary.map((card) => (
-            <Resume info={card} primary={false} />
+            <Resume key="" info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
           {pContent.primary.map((card) => (
-            <Resume info={card} primary={true} />
+            <Resume key="" info={card} primary={true} />
           ))}
         </Grid>
       </Grid>

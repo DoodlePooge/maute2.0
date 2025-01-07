@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material"
-import { FC } from "react"
 
-export const NoPage: FC = () => {
+export default function Custom404() {
   return (
     <Box justifyContent="center" width="100%" mt={5}>
       <Typography variant="h1" fontWeight={600}>

@@ -1,19 +1,17 @@
+"use client"
 import { Avatar, Box, Grid, useTheme } from "@mui/material"
-import { FC } from "react"
-import paigeImg from "../assets/paige.webp"
-import bryanImg from "../assets/bryan.webp"
-import paigeCard from "../content/paige/summary.json"
-import bryanCard from "../content/bryan/summary.json"
-import { Summary } from "../components/cards/Summary"
+import paigeCard from "@/app/paige/summary.json"
+import bryanCard from "@/app/bryan/summary.json"
+import { Summary } from "@/app/components/cards/Summary"
 
-export const MainPage: FC = () => {
+export default function Home() {
   const theme = useTheme()
   return (
     <Box>
       <Grid container justifyContent="center" alignItems="flex-end">
         <Grid item xs={12} sm={6} md={4}>
           <Avatar
-            src={paigeImg}
+            src="/paige.webp"
             sx={{
               border: 10,
               borderColor: theme.palette.background.paper,
@@ -28,7 +26,7 @@ export const MainPage: FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Avatar
-            src={bryanImg}
+            src="bryan.webp"
             sx={{
               border: 10,
               borderColor: theme.palette.background.paper,

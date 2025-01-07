@@ -1,24 +1,25 @@
+"use client"
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
-import { FC, useContext } from "react"
-import bryan from "../assets/bryan.webp"
-import bContent from "../content//bryan/about.json"
+import { useContext, useState } from "react"
+import bContent from "../bryan/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
-import { ThemeContext } from "../context"
-import { useOutletContext } from "react-router-dom"
-import { outletContext } from "../components/layouts/MainLayout"
+import { ThemeContext } from "@/context"
+import { SuccessNotif } from "../components/notifs/SuccessNotif"
 
-export const Bryan: FC = () => {
+export default function Page() {
   const { setTheme } = useContext(ThemeContext)
+  const [open, setOpen] = useState(false)
+  const [message, setMessage] = useState("")
   setTheme("Red", false)
-  const alertProps: outletContext = useOutletContext()
 
   const theme = useTheme()
   return (
     <>
+      <SuccessNotif message={message} open={open} setOpen={setOpen} />
       <Stack direction={{ xs: "column", md: "row" }} m={2}>
         <Avatar
-          src={bryan}
+          src="/bryan.webp"
           sx={{
             border: 10,
             borderColor: theme.palette.background.paper,
@@ -45,9 +46,9 @@ export const Bryan: FC = () => {
         <Grid item xs={12} md={4}>
           <Contact
             info={bContent.contact}
-            open={alertProps.open}
-            setOpen={alertProps.setOpen}
-            setMessage={alertProps.setMessage}
+            open={open}
+            setOpen={setOpen}
+            setMessage={setMessage}
           ></Contact>
           {bContent.secondary.map((card) => (
             <Resume key={card.header} info={card} primary={false} />

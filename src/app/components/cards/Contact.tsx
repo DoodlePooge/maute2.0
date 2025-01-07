@@ -87,7 +87,7 @@ export const Contact: FC<props> = (props) => {
         </Typography>
       </Box>
       {info.links?.map((site) => (
-        <Typography sx={{ display: "flex", alignItems: "center" }}>
+        <Typography key="" sx={{ display: "flex", alignItems: "center" }}>
           <Link href={site.link}>
             <IconButton color="primary">
               <PublicIcon />

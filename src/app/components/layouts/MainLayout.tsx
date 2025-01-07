@@ -2,14 +2,11 @@ import {
   Box,
   Container,
   Link,
-  Typography,
   styled,
+  Typography,
   useTheme,
 } from "@mui/material"
-import { Outlet } from "react-router-dom"
 import { Blob } from "../images/Blob"
-import { Dispatch, useState } from "react"
-import { SuccessNotif } from "../notifs/SuccessNotif"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -18,20 +15,10 @@ const MainLayoutRoot = styled("div")(({ theme }) => ({
   position: "fixed",
 }))
 
-export type outletContext = {
-  open: boolean
-  setOpen: Dispatch<React.SetStateAction<boolean>>
-  setMessage: Dispatch<React.SetStateAction<string>>
-}
-
-export const MainLayout = () => {
+export function MainLayout({ children }: { children: React.ReactNode }) {
   const theme = useTheme()
-  const [open, setOpen] = useState(false)
-  const [message, setMessage] = useState("")
-  const alertContext = { open: open, setOpen: setOpen, setMessage: setMessage }
   return (
     <MainLayoutRoot>
-      <SuccessNotif message={message} open={open} setOpen={setOpen} />
       <Link href="/" underline="none">
         <Typography
           variant="h2"
@@ -96,7 +83,7 @@ export const MainLayout = () => {
             scrollbarWidth: "none",
           }}
         >
-          <Outlet context={alertContext} />
+          {children}
         </Box>
       </Container>
     </MainLayoutRoot>

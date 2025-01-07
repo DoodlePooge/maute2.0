@@ -1,10 +1,11 @@
+"use client"
+import { Thumbnail } from "@/app/components/images/Thumbnail"
+import { ThemeContext } from "@/context"
+import { themeDict } from "@/themes"
 import { Box, Grid, ToggleButton, Typography } from "@mui/material"
-import { FC, useContext } from "react"
-import { themeDict } from "../themes"
-import { Thumbnail } from "../components/images/Thumbnail"
-import { ThemeContext } from "../context"
+import { useContext } from "react"
 
-export const ThemePicker: FC = () => {
+export default function Page() {
   const { setTheme } = useContext(ThemeContext)
 
   const options = []

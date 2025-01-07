@@ -1,5 +1,5 @@
 import { Box, Button, Card, Grid, Link, Typography } from "@mui/material"
-import { FC } from "react"
+import port from "./portfolio.json"
 
 type content = {
   subheader?: string
@@ -14,24 +14,18 @@ type info = {
   contents: content[]
 }
 
-interface props {
-  name: string
-  sections: info[]
-}
-
-export const Portfolio: FC<props> = (props) => {
+export default function Page() {
   // const theme = useTheme()
-  const { name, sections } = props
   return (
     <Box>
       <Typography variant="h1" fontWeight={700} my={2}>
-        {name}'s Portfolio
+        Paige's Portfolio
       </Typography>
       <Typography variant="h5" my={2}>
-        This is a one stop shop to explore a variety of {name}'s creations.
+        This is a one stop shop to explore a variety of Paige's creations.
       </Typography>
       <Grid container spacing={3}>
-        {sections.map((section) => (
+        {port.sections.map((section) => (
           <Grid item sm={12} lg={6}>
             <Card sx={{ my: 1, mb: 2, p: 2 }}>
               <Typography
