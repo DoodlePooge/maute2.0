@@ -1,13 +1,17 @@
+"use client"
 import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
-import { FC, useState } from "react"
-import { Contact } from "@/app/components/cards/Contact"
-import { Resume } from "@/app/components/cards/Resume"
-import { SuccessNotif } from "@/app/components/notifs/SuccessNotif"
-import pContent from "@/app/content/paige/about.json"
+import { useContext, useState } from "react"
+import bContent from "../bryan/about.json"
+import { Contact } from "../components/cards/Contact"
+import { Resume } from "../components/cards/Resume"
+import { ThemeContext } from "@/context"
+import { SuccessNotif } from "../components/notifs/SuccessNotif"
 
-export const Paige: FC = () => {
+export default function Page() {
+  const { setTheme } = useContext(ThemeContext)
   const [open, setOpen] = useState(false)
   const [message, setMessage] = useState("")
+  setTheme("Red", false)
 
   const theme = useTheme()
   return (
@@ -15,7 +19,7 @@ export const Paige: FC = () => {
       <SuccessNotif message={message} open={open} setOpen={setOpen} />
       <Stack direction={{ xs: "column", md: "row" }} m={2}>
         <Avatar
-          src="/paige.webp"
+          src="/bryan.webp"
           sx={{
             border: 10,
             borderColor: theme.palette.background.paper,
@@ -31,28 +35,28 @@ export const Paige: FC = () => {
           }}
         >
           <Typography variant="h1" fontWeight={800}>
-            Paige
+            Bryan
           </Typography>
           <Typography variant="h2" fontWeight={500} color="primary">
-            Junior Software Engineer
+            Digital Media Freelancer
           </Typography>
         </Box>
       </Stack>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <Contact
-            info={pContent.contact}
+            info={bContent.contact}
             open={open}
             setOpen={setOpen}
             setMessage={setMessage}
           ></Contact>
-          {pContent.secondary.map((card) => (
-            <Resume key="" info={card} primary={false} />
+          {bContent.secondary.map((card) => (
+            <Resume key={card.header} info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
-          {pContent.primary.map((card) => (
-            <Resume key="" info={card} primary={true} />
+          {bContent.primary.map((card) => (
+            <Resume key={card.header} info={card} primary={true} />
           ))}
         </Grid>
       </Grid>

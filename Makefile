@@ -19,6 +19,10 @@ spellcheck:
 prettier:
 	npx prettier . --write --no-semi --trailing-comma es5
 
+# Keeps the files literally "prettier" by formatting them consistently
+routes:
+	npx next-list
+
 # Builds the project in production format
 build:
 	npm run build

@@ -11,7 +11,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const currTheme = localStorage.getItem("themeTag") || "Purple"
+  const currTheme = "Purple"
   const [theme, setNewTheme] = useState(themeDict[currTheme])
   const setTheme = (newTheme: string, cache: boolean = true) => {
     if (cache) {

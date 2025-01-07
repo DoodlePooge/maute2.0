@@ -1,7 +1,7 @@
 "use client"
 import { Avatar, Box, Grid, useTheme } from "@mui/material"
-import paigeCard from "@/app/content/paige/summary.json"
-import bryanCard from "@/app/content/bryan/summary.json"
+import paigeCard from "@/app/paige/summary.json"
+import bryanCard from "@/app/bryan/summary.json"
 import { Summary } from "@/app/components/cards/Summary"
 
 export default function Home() {
