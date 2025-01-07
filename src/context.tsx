@@ -8,8 +8,7 @@ interface defaultThemeContext {
 }
 
 const CreateDefaultTheme = () => {
-  let currTheme
-  currTheme = "Purple"
+  const currTheme = "Purple"
 
   return { theme: themeDict[currTheme], setTheme: () => {} }
 }

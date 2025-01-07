@@ -1,32 +1,19 @@
 import { Box, Button, Card, Grid, Link, Typography } from "@mui/material"
 import port from "./portfolio.json"
 
-type content = {
-  subheader?: string
-  description?: string
-  tiny?: string
-  buttons?: { tag: string; route: string }[]
-}
-
-type info = {
-  header: string
-  description?: string
-  contents: content[]
-}
-
 export default function Page() {
   // const theme = useTheme()
   return (
     <Box>
       <Typography variant="h1" fontWeight={700} my={2}>
-        Paige's Portfolio
+        Paige&apos;s Portfolio
       </Typography>
       <Typography variant="h5" my={2}>
-        This is a one stop shop to explore a variety of Paige's creations.
+        This is a one stop shop to explore a variety of Paige&apos;s creations.
       </Typography>
       <Grid container spacing={3}>
         {port.sections.map((section) => (
-          <Grid item sm={12} lg={6}>
+          <Grid item key={section.header} sm={12} lg={6}>
             <Card sx={{ my: 1, mb: 2, p: 2 }}>
               <Typography
                 variant="h3"
@@ -43,7 +30,7 @@ export default function Page() {
                 {section.description}
               </Typography>
               {section.contents.map((content) => (
-                <Box my={2}>
+                <Box key={content.subheader} my={2}>
                   <Typography
                     variant="h5"
                     hidden={!content.subheader}
@@ -66,7 +53,10 @@ export default function Page() {
                     }}
                   >
                     {content.buttons?.map((button) => (
-                      <Link href={"/paige/portfolio" + button.route}>
+                      <Link
+                        key={button.tag}
+                        href={"/paige/portfolio" + button.route}
+                      >
                         <Button variant="contained">{button.tag}</Button>
                       </Link>
                     ))}

@@ -48,7 +48,7 @@ export const Resume: FC<props> = (props) => {
         </Typography>
       )}
       {info.contents.map((field) => (
-        <Box mb={3}>
+        <Box key={field.bold} mb={3}>
           <Typography variant="h6" fontWeight={600} hidden={!field.subheader}>
             {field.subheader}
           </Typography>
@@ -60,11 +60,13 @@ export const Resume: FC<props> = (props) => {
           </Typography>
           <Typography variant="caption">{field.tiny}</Typography>
           {field.bullets?.map((item) => (
-            <List sx={{ pl: 3, listStyleType: "disc" }}>
+            <List key={item} sx={{ pl: 3, listStyleType: "disc" }}>
               <Typography display="list-item">{item}</Typography>
             </List>
           ))}
-          {field.items?.map((item) => <Typography>{item}</Typography>)}
+          {field.items?.map((item) => (
+            <Typography key={item}>{item}</Typography>
+          ))}
         </Box>
       ))}
     </Card>

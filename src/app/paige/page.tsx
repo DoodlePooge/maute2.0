@@ -48,12 +48,12 @@ export default function Page() {
             setMessage={setMessage}
           ></Contact>
           {pContent.secondary.map((card) => (
-            <Resume key="" info={card} primary={false} />
+            <Resume key={card.header} info={card} primary={false} />
           ))}
         </Grid>
         <Grid item xs={12} md={8}>
           {pContent.primary.map((card) => (
-            <Resume key="" info={card} primary={true} />
+            <Resume key={card.header} info={card} primary={true} />
           ))}
         </Grid>
       </Grid>
