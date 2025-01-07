@@ -6,14 +6,14 @@ import { Box, Grid, ToggleButton, Typography } from "@mui/material"
 import { useContext } from "react"
 
 export default function Page() {
-  const { setTheme } = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext)
 
   const options = []
   for (const key in themeDict) {
-    const theme = themeDict[key]
-    const selected = localStorage.getItem("themeTag") === key
+    const op = themeDict[key]
+    const selected = theme === themeDict[key]
     options.push(
-      <Grid item>
+      <Grid item key={key}>
         <ToggleButton
           value={key}
           selected={selected}
@@ -22,8 +22,8 @@ export default function Page() {
           }}
         >
           <Thumbnail
-            default={theme.palette.background.default}
-            paper={theme.palette.background.paper}
+            default={op.palette.background.default}
+            paper={op.palette.background.paper}
           />
         </ToggleButton>
         <Typography sx={{ m: 1 }}>{key}</Typography>
