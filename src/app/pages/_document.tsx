@@ -16,5 +16,5 @@ export default function Head() {
         rel="stylesheet"
       />
     </head>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-"use client"
-import { Box, Typography } from "@mui/material"
-import Grid from "@mui/material/Grid2"
-import { ImgBlob } from "./components/images/ImgBlob"
-import { TransCard, TransCardActions } from "./components/cards/TransCard"
-import { LinkButton } from "./components/inputs/LinkButton"
+"use client";
+import { Box, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
+import { ImgBlob } from "./components/images/ImgBlob";
+import { TransCard, TransCardActions } from "./components/cards/TransCard";
+import { LinkButton } from "./components/inputs/LinkButton";
 
 export default function Home() {
   return (
@@ -49,5 +49,5 @@ export default function Home() {
         </Grid>
       </Grid>
     </Box>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import { Box } from "@mui/material"
+import { Box } from "@mui/material";
 
 // Copied the information of the svg from ./assets/thumbnail.svg to take advantage of the fill property
 export const Thumbnail = (props: {
-  default: string | undefined
-  paper: string | undefined
+  default: string | undefined;
+  paper: string | undefined;
 }) => {
   return (
     <Box
@@ -36,5 +36,5 @@ export const Thumbnail = (props: {
         </g>
       </svg>
     </Box>
-  )
-}
+  );
+};

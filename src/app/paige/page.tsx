@@ -1,15 +1,15 @@
-"use client"
-import { Box, Grid, Stack, Typography } from "@mui/material"
-import { useState } from "react"
-import { Contact } from "@/app/components/cards/Contact"
-import { Resume } from "@/app/components/cards/Resume"
-import { SuccessNotif } from "@/app/components/notifs/SuccessNotif"
-import pContent from "@/app/paige/about.json"
-import { ImgBlob } from "../components/images/ImgBlob"
+"use client";
+import { Box, Grid, Stack, Typography } from "@mui/material";
+import { useState } from "react";
+import { Contact } from "@/app/components/cards/Contact";
+import { Resume } from "@/app/components/cards/Resume";
+import { SuccessNotif } from "@/app/components/notifs/SuccessNotif";
+import pContent from "@/app/paige/about.json";
+import { ImgBlob } from "../components/images/ImgBlob";
 
 export default function Page() {
-  const [open, setOpen] = useState(false)
-  const [message, setMessage] = useState("")
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState("");
 
   return (
     <>
@@ -52,5 +52,5 @@ export default function Page() {
         </Grid>
       </Grid>
     </>
-  )
+  );
 }

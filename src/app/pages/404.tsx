@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material";
 
 export default function Custom404() {
   return (
@@ -8,5 +8,5 @@ export default function Custom404() {
         This page does not exist.
       </Typography>
     </Box>
-  )
+  );
 }

@@ -1,27 +1,27 @@
-import { Box, Card, List, Typography } from "@mui/material"
-import { FC } from "react"
+import { Box, Card, List, Typography } from "@mui/material";
+import { FC } from "react";
 
 type content = {
-  subheader?: string
-  subheader2?: string
-  bold?: string
-  tiny?: string
-  items?: string[]
-  bullets?: string[]
-}
+  subheader?: string;
+  subheader2?: string;
+  bold?: string;
+  tiny?: string;
+  items?: string[];
+  bullets?: string[];
+};
 
 type info = {
-  header: string
-  contents: content[]
-}
+  header: string;
+  contents: content[];
+};
 
 interface props {
-  info: info
-  primary: boolean
+  info: info;
+  primary: boolean;
 }
 
 export const Resume: FC<props> = (props) => {
-  const { info, primary } = props
+  const { info, primary } = props;
 
   return (
     <Card sx={{ m: 1, mb: 2, p: 2 }}>
@@ -70,5 +70,5 @@ export const Resume: FC<props> = (props) => {
         </Box>
       ))}
     </Card>
-  )
-}
+  );
+};
