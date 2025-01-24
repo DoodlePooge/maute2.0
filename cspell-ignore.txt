@@ -14,5 +14,6 @@ notifs
 Photoshop
 Pooge
 Stroudsburg
+turbopack
 vercel
 webp

@@ -9,7 +9,7 @@ import {
 import { Blob } from "../images/Blob"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
+  backgroundColor: theme.vars.palette.background.paper,
   height: "100vh",
   width: "100vw",
   position: "fixed",
@@ -21,14 +21,14 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
     <MainLayoutRoot>
       <Link href="/" underline="none">
         <Typography
-          variant="h2"
+          variant="h3"
           fontWeight={900}
-          color={theme.palette.text.secondary}
+          color={theme.vars.palette.primary.main}
           sx={{
             ml: "3vw",
             mt: "2vh",
             position: "absolute",
-            maxWidth: "90vw",
+            maxWidth: "80vw",
           }}
         >
           MAUTE.US
@@ -38,41 +38,50 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
         aria-hidden
         sx={{
           position: "absolute",
-          "@media (min-width: 400px)": { top: -750, left: -650 },
-          "@media (max-width: 400px)": {
-            top: -700,
-            left: -1700,
+          width: "160vw",
+          height: "160vw",
+          top: "-80vw",
+          left: "-80vw",
+          "@media (max-width: 700px)": {
+            width: "160vh",
+            height: "160vh",
+            top: "-80vh",
+            left: "-80vh",
           },
           zIndex: -1,
         }}
       >
-        <Blob fill={theme.palette.background.default} />
+        <Blob fill={theme.vars.palette.background.default} />
       </Box>
       <Box
         aria-hidden
         sx={{
           zIndex: -1,
-          "@media (min-width: 400px)": {
-            top: "60vh",
-            float: "right",
-            position: "absolute",
-            "@media (min-width: 2000px)": {
-              position: "fixed",
-              right: -400,
-            },
+          width: "120vw",
+          height: "120vw",
+          bottom: "-60vw",
+          right: "-60vw",
+          //   "@media (min-width: 2000px)": {
+          //     width: 1504,
+          //     height: 1504,
+          //     bottom: -700,
+          //     right: -700,
+          //  },
+          "@media (max-width: 700px)": {
+            width: "120vh",
+            height: "120vh",
+            bottom: "-60vh",
+            right: "-60vh",
           },
-          "@media (max-width: 400px)": {
-            top: -100,
-            position: "absolute",
-          },
+          position: "absolute",
         }}
       >
-        <Blob fill={theme.palette.background.default} />
+        <Blob fill={theme.vars.palette.background.default} />
       </Box>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Box
           sx={{
-            mask: "linear-gradient(to top, rgba(0,0,0, 1) 0, rgba(0,0,0, 1) 97%, rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 20%);",
+            mask: "linear-gradient(to top, rgba(0,0,0, 1) 0, rgba(0,0,0, 1) 98%, rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 20%);",
             overflow: "auto",
             maxHeight: "90vh",
             position: "relative",

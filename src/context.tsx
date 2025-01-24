@@ -13,6 +13,5 @@ const CreateDefaultTheme = () => {
   return { theme: themeDict[currTheme], setTheme: () => {} }
 }
 
-export const ThemeContext = createContext<defaultThemeContext>(
-  CreateDefaultTheme()
-)
+export const ThemeContext =
+  createContext<defaultThemeContext>(CreateDefaultTheme())
