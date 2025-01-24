@@ -1,48 +1,48 @@
-import { Box, Card, IconButton, Link, Typography } from "@mui/material";
-import { Dispatch, FC } from "react";
-import EmailIcon from "@mui/icons-material/Email";
-import copy from "clipboard-copy";
-import PlaceIcon from "@mui/icons-material/Place";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import PhoneIcon from "@mui/icons-material/Phone";
-import PublicIcon from "@mui/icons-material/Public";
+import { Box, Card, IconButton, Link, Typography } from "@mui/material"
+import { Dispatch, FC } from "react"
+import EmailIcon from "@mui/icons-material/Email"
+import copy from "clipboard-copy"
+import PlaceIcon from "@mui/icons-material/Place"
+import GitHubIcon from "@mui/icons-material/GitHub"
+import PhoneIcon from "@mui/icons-material/Phone"
+import PublicIcon from "@mui/icons-material/Public"
 
 type info = {
-  email?: string;
-  phone?: string;
-  location?: string;
-  github?: { label: string; link: string };
-  links?: { label: string; link: string }[];
-};
+  email?: string
+  phone?: string
+  location?: string
+  github?: { label: string; link: string }
+  links?: { label: string; link: string }[]
+}
 
 interface props {
-  info: info;
-  open: boolean;
-  setOpen: Dispatch<React.SetStateAction<boolean>>;
-  setMessage: Dispatch<React.SetStateAction<string>>;
+  info: info
+  open: boolean
+  setOpen: Dispatch<React.SetStateAction<boolean>>
+  setMessage: Dispatch<React.SetStateAction<string>>
 }
 
 export const Contact: FC<props> = (props) => {
-  const { info, open, setOpen, setMessage } = props;
+  const { info, open, setOpen, setMessage } = props
   const maps = info.location
     ? "https://www.google.com/maps/place/" + info.location.replace(" ", "+")
-    : "/";
+    : "/"
   const copyEmail = () => {
     if (open) {
-      setOpen(false);
+      setOpen(false)
     }
-    setMessage("Email Copied!");
-    setOpen(true);
-    copy(info.email || "");
-  };
+    setMessage("Email Copied!")
+    setOpen(true)
+    copy(info.email || "")
+  }
   const copyPhone = () => {
     if (open) {
-      setOpen(false);
+      setOpen(false)
     }
-    setMessage("Phone Number Copied!");
-    setOpen(true);
-    copy(info.phone || "");
-  };
+    setMessage("Phone Number Copied!")
+    setOpen(true)
+    copy(info.phone || "")
+  }
   return (
     <Card sx={{ m: 1, mb: 2, p: 2 }}>
       <Typography variant="h5" sx={{ fontWeight: 800 }}>
@@ -100,5 +100,5 @@ export const Contact: FC<props> = (props) => {
         </Typography>
       ))}
     </Card>
-  );
-};
+  )
+}

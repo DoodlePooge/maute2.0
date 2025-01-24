@@ -1,4 +1,4 @@
-import { Button, ButtonProps, styled } from "@mui/material";
+import { Button, ButtonProps, styled } from "@mui/material"
 
 export const MButton = styled(Button)<ButtonProps>(({ theme }) => ({
   borderRadius: 40,
@@ -9,4 +9,4 @@ export const MButton = styled(Button)<ButtonProps>(({ theme }) => ({
     backgroundColor: theme.vars.palette.primary.main[700],
   },
   variant: "contained",
-}));
+}))

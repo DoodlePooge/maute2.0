@@ -1,17 +1,17 @@
-import { createContext } from "react";
-import { themeDict } from "./themes";
-import { Theme } from "@mui/material";
+import { createContext } from "react"
+import { themeDict } from "./themes"
+import { Theme } from "@mui/material"
 
 interface defaultThemeContext {
-  theme: Theme;
-  setTheme: (newTheme: string, cache?: boolean) => void;
+  theme: Theme
+  setTheme: (newTheme: string, cache?: boolean) => void
 }
 
 const CreateDefaultTheme = () => {
-  const currTheme = "Purple";
+  const currTheme = "Purple"
 
-  return { theme: themeDict[currTheme], setTheme: () => {} };
-};
+  return { theme: themeDict[currTheme], setTheme: () => {} }
+}
 
 export const ThemeContext =
-  createContext<defaultThemeContext>(CreateDefaultTheme());
+  createContext<defaultThemeContext>(CreateDefaultTheme())

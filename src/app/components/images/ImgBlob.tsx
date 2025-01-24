@@ -33,5 +33,5 @@ export const ImgBlob = (props: { id: string; image: string | undefined }) => {
         </path>
       </svg>
     </>
-  );
-};
+  )
+}

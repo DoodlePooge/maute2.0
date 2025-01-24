@@ -5,18 +5,18 @@ import {
   styled,
   Typography,
   useTheme,
-} from "@mui/material";
-import { Blob } from "../images/Blob";
+} from "@mui/material"
+import { Blob } from "../images/Blob"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
   backgroundColor: theme.vars.palette.background.paper,
   height: "100vh",
   width: "100vw",
   position: "fixed",
-}));
+}))
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <MainLayoutRoot>
       <Link href="/" underline="none">
@@ -96,5 +96,5 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
         </Box>
       </Container>
     </MainLayoutRoot>
-  );
+  )
 }

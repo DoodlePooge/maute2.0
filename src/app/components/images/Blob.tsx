@@ -23,5 +23,5 @@ export const Blob = (props: { fill: string | undefined }) => {
         </path>
       </svg>
     </>
-  );
-};
+  )
+}

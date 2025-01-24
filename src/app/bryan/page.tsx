@@ -1,18 +1,18 @@
-"use client";
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import { useContext, useState } from "react";
-import bContent from "../bryan/about.json";
-import { Contact } from "../components/cards/Contact";
-import { Resume } from "../components/cards/Resume";
-import { ThemeContext } from "@/context";
-import { SuccessNotif } from "../components/notifs/SuccessNotif";
-import { ImgBlob } from "../components/images/ImgBlob";
+"use client"
+import { Box, Grid, Stack, Typography } from "@mui/material"
+import { useContext, useState } from "react"
+import bContent from "../bryan/about.json"
+import { Contact } from "../components/cards/Contact"
+import { Resume } from "../components/cards/Resume"
+import { ThemeContext } from "@/context"
+import { SuccessNotif } from "../components/notifs/SuccessNotif"
+import { ImgBlob } from "../components/images/ImgBlob"
 
 export default function Page() {
-  const { setTheme } = useContext(ThemeContext);
-  const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState("");
-  setTheme("Red", false);
+  const { setTheme } = useContext(ThemeContext)
+  const [open, setOpen] = useState(false)
+  const [message, setMessage] = useState("")
+  setTheme("Red", false)
 
   return (
     <>
@@ -55,5 +55,5 @@ export default function Page() {
         </Grid>
       </Grid>
     </>
-  );
+  )
 }

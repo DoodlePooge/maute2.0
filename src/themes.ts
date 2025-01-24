@@ -1,5 +1,5 @@
-import { Theme, createTheme, responsiveFontSizes } from "@mui/material/styles";
-import type {} from "@mui/material/themeCssVarsAugmentation";
+import { Theme, createTheme, responsiveFontSizes } from "@mui/material/styles"
+import type {} from "@mui/material/themeCssVarsAugmentation"
 
 // https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-fafaff-eee8ff-e2d6ff-273469-1e2749
 // https://coolors.co/23272f-ff6969-ffe37c-94ff97-fffafa-ffc9c9-ff9797-1e2749
@@ -21,7 +21,7 @@ const common = {
   shape: {
     borderRadius: 4,
   },
-};
+}
 
 const mainTheme = responsiveFontSizes(
   createTheme({
@@ -85,8 +85,8 @@ const mainTheme = responsiveFontSizes(
       },
     },
     ...common,
-  }),
-);
+  })
+)
 
 const bryTheme = responsiveFontSizes(
   createTheme({
@@ -150,10 +150,10 @@ const bryTheme = responsiveFontSizes(
       },
     },
     ...common,
-  }),
-);
+  })
+)
 
 export const themeDict: { [key: string]: Theme } = {
   Purple: mainTheme,
   Red: bryTheme,
-};
+}

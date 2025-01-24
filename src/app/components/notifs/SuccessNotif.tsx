@@ -1,29 +1,29 @@
-import { Alert, Slide, Snackbar } from "@mui/material";
-import { Dispatch, FC } from "react";
+import { Alert, Slide, Snackbar } from "@mui/material"
+import { Dispatch, FC } from "react"
 
 interface props {
-  message: string;
-  open: boolean;
-  setOpen: Dispatch<React.SetStateAction<boolean>>;
+  message: string
+  open: boolean
+  setOpen: Dispatch<React.SetStateAction<boolean>>
 }
 
 export const SuccessNotif: FC<props> = (props) => {
-  const { message, open, setOpen } = props;
+  const { message, open, setOpen } = props
 
   const handleClose = (
     event: React.SyntheticEvent | Event,
-    reason?: string,
+    reason?: string
   ) => {
     if (event && reason === "clickaway") {
-      return;
+      return
     }
-    setOpen(false);
-  };
+    setOpen(false)
+  }
   return (
     <Slide in={open} direction="up">
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
         <Alert severity="success">{message}</Alert>
       </Snackbar>
     </Slide>
-  );
-};
+  )
+}
