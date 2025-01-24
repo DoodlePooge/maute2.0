@@ -1,11 +1,12 @@
 "use client"
-import { Avatar, Box, Grid, Stack, Typography, useTheme } from "@mui/material"
+import { Box, Grid, Stack, Typography } from "@mui/material"
 import { useContext, useState } from "react"
 import bContent from "../bryan/about.json"
 import { Contact } from "../components/cards/Contact"
 import { Resume } from "../components/cards/Resume"
 import { ThemeContext } from "@/context"
 import { SuccessNotif } from "../components/notifs/SuccessNotif"
+import { ImgBlob } from "../components/images/ImgBlob"
 
 export default function Page() {
   const { setTheme } = useContext(ThemeContext)
@@ -13,20 +14,13 @@ export default function Page() {
   const [message, setMessage] = useState("")
   setTheme("Red", false)
 
-  const theme = useTheme()
   return (
     <>
       <SuccessNotif message={message} open={open} setOpen={setOpen} />
       <Stack direction={{ xs: "column", md: "row" }} m={2}>
-        <Avatar
-          src="/bryan.webp"
-          sx={{
-            border: 10,
-            borderColor: theme.palette.background.paper,
-            width: 300,
-            height: 300,
-          }}
-        />
+        <Box width={350}>
+          <ImgBlob id="bryan" image="/bryan.webp" />
+        </Box>
         <Box
           sx={{
             m: "2vw",

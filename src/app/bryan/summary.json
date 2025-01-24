@@ -1,6 +1,0 @@
-{
-  "name": "Bryan",
-  "title": "Digital Media Freelancer",
-  "description": "",
-  "buttons": [{ "tag": "About Me", "route": "/bryan" }]
-}

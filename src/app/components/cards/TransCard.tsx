@@ -1,15 +1,15 @@
 import { Card, CardActions, CardProps, styled } from "@mui/material"
 
 export const TransCard = styled(Card)<CardProps>(() => ({
-  m: 1,
-  mb: 3,
-  p: 2,
-  backgroundColor: "transparent",
+  margin: 1,
+  marginBottom: 3,
+  padding: 2,
+  background: "none",
   border: 0,
   boxShadow: "none",
 }))
 
 export const TransCardActions = styled(CardActions)<CardProps>(() => ({
-  mt: 2,
+  marginTop: 10,
   justifyContent: "right",
 }))

@@ -9,7 +9,7 @@ import {
 import { Blob } from "../images/Blob"
 
 const MainLayoutRoot = styled("div")(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
+  backgroundColor: theme.vars.palette.background.paper,
   height: "100vh",
   width: "100vw",
   position: "fixed",
@@ -23,7 +23,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
         <Typography
           variant="h3"
           fontWeight={900}
-          color={theme.palette.primary.main}
+          color={theme.vars.palette.primary.main}
           sx={{
             ml: "3vw",
             mt: "2vh",
@@ -51,7 +51,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           zIndex: -1,
         }}
       >
-        <Blob fill={theme.palette.background.default} />
+        <Blob fill={theme.vars.palette.background.default} />
       </Box>
       <Box
         aria-hidden
@@ -76,7 +76,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           position: "absolute",
         }}
       >
-        <Blob fill={theme.palette.background.default} />
+        <Blob fill={theme.vars.palette.background.default} />
       </Box>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Box

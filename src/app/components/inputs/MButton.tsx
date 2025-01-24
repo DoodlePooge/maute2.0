@@ -2,11 +2,11 @@ import { Button, ButtonProps, styled } from "@mui/material"
 
 export const MButton = styled(Button)<ButtonProps>(({ theme }) => ({
   borderRadius: 40,
-  color: theme.palette.secondary.main,
+  color: theme.vars.palette.secondary.main,
   padding: "8px 16px",
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: theme.vars.palette.primary.main,
   "&:hover": {
-    backgroundColor: theme.palette.primary.main[700],
+    backgroundColor: theme.vars.palette.primary.main[700],
   },
   variant: "contained",
 }))
