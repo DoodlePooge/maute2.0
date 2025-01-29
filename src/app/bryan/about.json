@@ -1,14 +1,4 @@
 {
-  "contact": {
-    "email": "bryan@maute.us",
-    "location": "East Stroudsburg PA",
-    "links": [
-      {
-        "label": "Behance Portfolio",
-        "link": "https://www.behance.net/bryanmaute1d32"
-      }
-    ]
-  },
   "primary": [
     {
       "header": "Work Experience",
