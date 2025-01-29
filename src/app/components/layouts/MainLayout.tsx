@@ -61,12 +61,6 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           height: "120vw",
           bottom: "-60vw",
           right: "-60vw",
-          //   "@media (min-width: 2000px)": {
-          //     width: 1504,
-          //     height: 1504,
-          //     bottom: -700,
-          //     right: -700,
-          //  },
           "@media (max-width: 700px)": {
             width: "120vh",
             height: "120vh",

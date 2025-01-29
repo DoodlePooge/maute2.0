@@ -1,9 +1,11 @@
 import { Theme, createTheme, responsiveFontSizes } from "@mui/material/styles"
 import type {} from "@mui/material/themeCssVarsAugmentation"
 
-// https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-fafaff-eee8ff-e2d6ff-273469-1e2749
-// https://coolors.co/23272f-ff6969-ffe37c-94ff97-fffafa-ffc9c9-ff9797-1e2749
-// https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-e8f8ff-d6e9ff-273469-1e2749
+// Paige Light
+// https://coolors.co/30343f-ff5c5c-ffdc5c-69f26d-fafaff-e1d6ff-d4c2ff-273469-1e2749-171f3b
+
+// Bryan Dark
+// https://coolors.co/30343f-ff8d8d-ffeca8-bbf9bd-fff5f5-ff9d9d-ff7070-1d264a-181f3b-12172b
 
 const common = {
   breakpoints: {
@@ -33,20 +35,23 @@ const mainTheme = responsiveFontSizes(
             main: "#273469",
           },
           secondary: {
-            main: "#EEE8FF",
+            main: "#E1D6FF",
           },
           background: {
-            default: "#E2D6FF",
-            paper: "#EEE8FF",
+            default: "#D4C2FF",
+            paper: "#E1D6FF",
           },
           success: {
             main: "#69F26D",
+            contrastText: "#FAFAFF",
           },
           warning: {
-            main: "#FFE070",
+            main: "#FFDC5C",
+            contrastText: "#FAFAFF",
           },
           error: {
             main: "#FF5C5C",
+            contrastText: "#FAFAFF",
           },
           text: {
             primary: "#30343F",
@@ -58,7 +63,7 @@ const mainTheme = responsiveFontSizes(
       dark: {
         palette: {
           primary: {
-            main: "#E2D6FF",
+            main: "#D4C2FF",
           },
           secondary: {
             main: "#1E2749",
@@ -69,17 +74,20 @@ const mainTheme = responsiveFontSizes(
           },
           success: {
             main: "#BBF9BD",
+            contrastText: "#171f3b",
           },
           warning: {
             main: "#FFECA8",
+            contrastText: "#171f3b",
           },
           error: {
+            contrastText: "#171f3b",
             main: "#FF8D8D",
           },
           text: {
             primary: "#FAFAFF",
-            secondary: "#EEE8FF",
-            disabled: "#E2D6FF",
+            secondary: "#E1D6FF",
+            disabled: "#D4C2FF",
           },
         },
       },
@@ -95,51 +103,57 @@ const bryTheme = responsiveFontSizes(
       dark: {
         palette: {
           primary: {
-            main: "#FF9797",
+            main: "#FF7070",
           },
           secondary: {
-            main: "#1E2749",
+            main: "#181F3B",
           },
           background: {
-            default: "#1E2749",
-            paper: "#273469",
+            default: "#181F3B",
+            paper: "#1D264A",
           },
           success: {
             main: "#BBF9BD",
+            contrastText: "#12172B",
           },
           warning: {
             main: "#FFECA8",
+            contrastText: "#12172B",
           },
           error: {
             main: "#FF8D8D",
+            contrastText: "#12172B",
           },
           text: {
-            primary: "#FAFAFF",
-            secondary: "#FFC9C9",
-            disabled: "#FF9797",
+            primary: "#FFF5F5",
+            secondary: "#FF9D9D",
+            disabled: "#FF7070",
           },
         },
       },
       light: {
         palette: {
           primary: {
-            main: "#1E2749",
+            main: "#181F3B",
           },
           secondary: {
-            main: "#FFC9C9",
+            main: "#FF9D9D",
           },
           background: {
-            default: "#FF9797",
-            paper: "#FFC9C9",
+            default: "#FF7070",
+            paper: "#FF9D9D",
           },
           success: {
-            main: "#94FF97",
+            main: "#69F26D",
+            contrastText: "#FFF5F5",
           },
           warning: {
-            main: "#FFE37C",
+            main: "#FFDC5C",
+            contrastText: "#FFF5F5",
           },
           error: {
-            main: "#FF6969",
+            main: "#FF5C5C",
+            contrastText: "#FFF5F5",
           },
           text: {
             primary: "#23272F",
