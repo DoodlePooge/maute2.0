@@ -1,0 +1,19 @@
+{
+  "items": [
+    { "route": "/techstack/agile.png", "tag": "Agile Projects" },
+    { "route": "/techstack/git.png", "tag": "Git" },
+    { "route": "/techstack/ts.png", "tag": "TypeScript" },
+    { "route": "/techstack/py.webp", "tag": "Python" },
+    { "route": "/techstack/html-css-js.png", "tag": "Web Foundations" },
+    { "route": "/techstack/php.svg", "tag": "Php" },
+    { "route": "/techstack/pwrshll.png", "tag": "Powershell Scripting" },
+    { "route": "/techstack/react.png", "tag": "React" },
+    { "route": "/techstack/ang.png", "tag": "AngularJS" },
+    { "route": "/techstack/fastapi.svg", "tag": "FastAPI" },
+    { "route": "/techstack/next.png", "tag": "Next.JS" },
+    { "route": "/techstack/vitejs.svg", "tag": "Vite" },
+    { "route": "/techstack/dj.png", "tag": "Django" },
+    { "route": "/techstack/mongodb.svg", "tag": "MongoDB" },
+    { "route": "/techstack/mySQL.png", "tag": "MySQL" }
+  ]
+}

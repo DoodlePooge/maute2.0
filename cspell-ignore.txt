@@ -7,13 +7,16 @@ clickaway
 Curriculars
 Darkmoon
 Dreamweaver
+fastapi
 Innovatively
 maute
 Notif
 notifs
 Photoshop
 Pooge
+pwrshll
 Stroudsburg
+techstack
 turbopack
 vercel
 webp

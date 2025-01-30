@@ -1,9 +1,14 @@
 "use client"
-import { Box, Grid, Stack, Typography } from "@mui/material"
+import { Box, Stack, Typography } from "@mui/material"
+import Grid from "@mui/material/Grid2"
 import { Contact } from "@/app/components/cards/Contact"
 import { Resume } from "@/app/components/cards/Resume"
 import pContent from "@/app/paige/about.json"
+import pStack from "@/app/paige/stack.json"
 import { ImgBlob } from "../components/images/ImgBlob"
+import { LinedCard, LinedCardActions } from "../components/cards/LinedCard"
+import Image from "next/image"
+import { SlideShow } from "../components/animated/SlideShow"
 
 export default function Page() {
   return (
@@ -34,13 +39,26 @@ export default function Page() {
           ></Contact>
         </Box>
       </Stack>
+      <SlideShow direction="row" spacing={3}>
+        {pStack.items.map((item) => (
+          <LinedCard key={item.tag} sx={{ justifyContent: "center" }}>
+            <Image
+              src={item.route}
+              width="100"
+              height="100"
+              alt={item.tag + "icon"}
+            />
+            <LinedCardActions>{item.tag}</LinedCardActions>
+          </LinedCard>
+        ))}
+      </SlideShow>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           {pContent.secondary.map((card) => (
             <Resume key={card.header} info={card} primary={false} />
           ))}
         </Grid>
-        <Grid item xs={12} md={8}>
+        <Grid size={{ xs: 12, md: 8 }}>
           {pContent.primary.map((card) => (
             <Resume key={card.header} info={card} primary={true} />
           ))}
