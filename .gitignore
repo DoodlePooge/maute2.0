@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# containers
+/.docker
+
 # testing
 /coverage
 
