@@ -4,9 +4,34 @@
       "header": "Work Experience",
       "contents": [
         {
+          "subheader": "Systems Integration 1",
+          "bold": "Compass 82",
+          "tiny": "JAN 2025 - PRESENT",
+          "bullets": [
+            "Implemented a REST API integration connecting internal and partner databases, enabling automated data exchange across organizations.",
+            "Configure Zoho CRM instances for new contracts, building custom modules and fields and managing field-level permissions by role for ~30 users.",
+            "Audited and validated 300,000+ potential client records against established criteria, importing qualified records through controlled batches.",
+            "Created internal automations and reports that flag duplicate records and surface data-quality issues.",
+            "Advised the partner’s team on their React web application, giving design and functionality feedback."
+          ]
+        },
+        {
+          "subheader": "Software Consultant",
+          "bold": "Lakeland Polymers",
+          "tiny": "JAN 2025 - PRESENT",
+          "bullets": [
+            "Serve as sole subject matter expert (SME) of the client’s inherited business applications, responsible for development, maintenance, and version control.",
+            "Refactored a PHP file that ran several database queries on every page load so they run once at login and are cached, cutting typical load times by ~80%.",
+            "Redesigned year-end reporting through scheduled MySQL events and dedicated caching tables, cutting load time from 15 seconds to 1 second (93%).",
+            "Evaluated database architecture requirements and presented migration options, including a potential move to PostgreSQL.",
+            "Built an inventory summary page that organizes current stock by color, form, and plastic type, giving staff an at-a-glance view of what’s on hand.",
+            "Write user guides so nontechnical staff could adopt each release independently."
+          ]
+        },
+        {
           "subheader": "Software Engineer",
           "bold": "Obscurity Labs LLC",
-          "tiny": "MAY 2022 - PRESENT",
+          "tiny": "MAY 2022 - AUG 2024",
           "bullets": [
             "Pioneered the successful delivery of an open-source web application by mentoring interns, leveraging FastAPI to efficiently parse ISO files into a structured database.",
             "Engineered and optimized cutting-edge features for web applications using AngularJS and React, ensuring cross-browser compatibility and an intuitive user experience.",
@@ -67,6 +92,15 @@
             "Conducted daily stand-up meetings to track progress and ensure alignment with project goals and deadlines.",
             "Delivered a professional presentation of the project’s achievements to the Commonwealth Cyber Initiative, showcasing the team's work and outcomes."
           ]
+        },
+        {
+          "subheader": "Developer",
+          "bold": "Datafle",
+          "tiny": "SEPT 2025",
+          "bullets": [
+            "Built a Discord bot that parses users’ daily puzzle results from chat messages and stores the scores in PostgreSQL.",
+            "Generated per-user statistics and head-to-head comparisons, visualized with Chart.js."
+          ]
         }
       ]
     }
@@ -93,20 +127,32 @@
             "TypeScript",
             "Python",
             "SQL",
+            "PHP",
             "Powershell Scripting"
           ]
         },
         {
-          "subheader": "Frameworks",
-          "items": ["FastAPI", "React", "AngularJS", "Django"]
+          "subheader": "Frontend",
+          "items": ["FastAPI", "React", "AngularJS"]
         },
         {
-          "subheader": "Soft Skills",
+          "subheader": "Backend",
+          "items": ["FastAPI", "Discord.js"]
+        },
+        {
+          "subheader": "Databases",
+          "items": ["MySQL", "PostgreSQL"]
+        },
+        {
+          "subheader": "Tools & Practices",
           "items": [
-            "Communication",
-            "Leadership",
-            "Event Planning",
-            "Project Management"
+            "Git",
+            "Zoho CRM",
+            "Vercel",
+            "Selenium",
+            "Mocha",
+            "Ubuntu",
+            "Agile"
           ]
         }
       ]
